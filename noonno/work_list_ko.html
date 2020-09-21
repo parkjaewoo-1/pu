@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link href="./resource/css/reset.css" rel="stylesheet" type="text/css"/>
+ 
+  <script type="text/javascript" src="/paulmade/resources/javascript/front/pc/ko/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="/paulmade/resources/javascript/front/pc/ko/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="/paulmade/resources/javascript/front/pc/ko/design_common.js"></script>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <!--
+  <script type="text/javascript" src="/paulmade/resources/javascript/front/pc/ko/plugin.js"></script>
+  -->
+  <script type="text/javascript" src="/paulmade/resources/javascript/front/pc/ko/TweenMax/TweenMax.min.js"></script>
+  <script type="text/javascript" src="/paulmade/resources/javascript/front/pc/ko/TweenMax/easing/EasePack.min.js"></script>
+
+  
+
+  <script type="text/javascript" src="/paulmade/resources/javascript/front/pc/ko/fullpage/fullpage.js"></script>
+  <title>Daekyo work_list</title>
+  <style type="text/css">
+
+    body{width:100%; height:100%;  font-family:vernada; margin:20px auto;}
+    #secretWrapper{width :98%; margin:0 auto;}
+    #secretWrapper h1{font-size:30px; text-align:center; margin:0 0 119px;}
+    #secretWrapper h2{font-size:20px; margin:30px 0 20px;}
+    #secretWrapper table{width:100%; border-top:1px solid #99948e; border-left:1px solid #99948e; border-collapse:collapse;}
+    #secretWrapper table .title1{background-color:#e6002d; color:#fff; padding:7px 0 5px; text-align:center;}
+    #secretWrapper table .title2{background-color:#f7f7f7; color:#707070; padding:7px 0 5px; text-align:center;}
+    #secretWrapper table .title3{background-color:#dfdfdf; color:#707070; padding:7px 0 5px; text-align:center;}
+    #secretWrapper table th{border-right:1px solid #99948e; border-bottom:1px solid #99948e; padding:5px 0;}
+    #secretWrapper table td{border-right:1px solid #99948e; border-bottom:1px solid #99948e;}
+    #secretWrapper table tbody td{padding:8px 20px; font-size:12px;}
+    #secretWrapper table tbody tr td a {color:#333; text-decoration:underline;}
+
+    #secretWrapper table tbody tr.ok th,
+    #secretWrapper table tbody tr.ok td{background:#9f9f95; color:#fff;}
+    #secretWrapper table tbody tr.ok td.dev{background:#9f9f95; color:#fff;}
+    #secretWrapper table tbody tr.ok td a{color:#fff;}
+
+    #secretWrapper table tbody tr.ok2 td{background:#c62b4a; color:#fff;}
+    #secretWrapper table tbody tr.ok2 td.dev {background:#c62b4a; color:#fff;}
+    #secretWrapper table tbody tr.ok2 td a{color:#fff;}
+
+    #secretWrapper table tbody tr.ok3 td{background:#6e58c6; color:#fff;}
+    #secretWrapper table tbody tr.ok3 td.dev {background:#a07fff; color:#333}
+    #secretWrapper table tbody tr.ok3 td a{color:#fff;}
+    #secretWrapper table tbody tr.del td{background:#999; color:#333;}
+
+    .caution {background-color:lightblue;}
+
+    body *{margin:0; padding:0;}
+    #secretWrapper .depth_info { width:98%; position:absolute; top:44px;}
+    #secretWrapper .depth_info.fix { position:fixed; top:0;}
+
+  </style>
+  <script>
+        $(function () {
+      var $table = $("table");
+      var $tbody = $("table tbody");
+            $table.each(function () {
+        var _this = $(this);
+        var divisionDepth = _this.find("tbody > tr");
+                var divisionLength = divisionDepth.length;
+
+                divisionDepth.eq(0).find("td").eq(0).attr("rowspan", divisionLength);
+            });
+
+            var $depthInfo = $(".depth_info");
+            $(window).scroll(function () {
+        var st = $(this).scrollTop();
+        if(st > 83){
+                    $depthInfo.addClass("fix");
+        } else {
+                    $depthInfo.removeClass("fix");
+        }
+            });
+        });
+  </script>
+</head>
+<body>
+<div id="secretWrapper">
+  <table class="depth_info">
+    <colgroup>
+      <col width="10%">
+      <col width="15%">
+      <col width="15%">
+      <col width="20%">
+      <col width="10%">
+      <col width="10%">
+      <col>
+    </colgroup>
+    <thead>
+    <tr class="title1">
+      <th colspan="4">DEPTH</th>
+      <th colspan="2">코딩현황</th>
+      <th>화면아이디</th>
+    </tr>
+    <tr class="title2">
+      <th></th>
+      <th>1depth</th>
+      <th>2depth</th>
+      <th>3depth</th>
+      <th colspan="2">마크업 파일명</th>
+      <th></th>
+    </tr>
+    <tr class="title3">
+      <th>구분</th>
+      <th>Label</th>
+      <th>Label</th>
+      <th>Label</th>
+      <th>Folder</th>
+      <th>File</th>
+      <th></th>
+    </tr>
+    </thead>
+  </table>
+  <h1>Daekyo / PC</h1>
+  <!-- 가이드 -->
+  <h2>Guide</h2>
+  <table>
+    <colgroup>
+      <col width="10%">
+      <col width="15%">
+      <col width="15%">
+      <col width="20%">
+      <col width="10%">
+      <col width="10%">
+      <col>
+    </colgroup>
+    <tbody>
+    <tr  >
+      <td>가이드</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>guide</td>
+      <td><a href="#" target="_blank">guide</a></td>
+      <td class=""></td>
+    </tr>
+  
+    
+    </tbody>
+  </table>
+  <!-- //가이드 -->
+  <h2>가이드</h2>
+  <table>
+    <colgroup>
+      <col width="10%">
+      <col width="15%">
+      <col width="15%">
+      <col width="20%">
+      <col width="10%">
+      <col width="10%">
+      <col>
+    </colgroup>
+    <tbody>
+    <tr>
+      <td>회사소개</td>
+      <td>회사개요</td>
+      <td></td>
+      <td></td>
+      <td rowspan="11">company</td>
+      <td><a href="/paulmade/ko/etc/cookie.html" target="_blank"></a></td>
+      <td class=""></td>
+    </tr>
+    <tr class="ok">
+      <td>CEO 인사말</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/company/greeting.html" target="_blank">greeting</a></td>
+      <td class=""></td>
+    </tr>
+    <tr>
+      <td>회사연혁</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/etc/privacy.html" target="_blank"></a></td>
+      <td class=""></td>
+    </tr>
+    <tr>
+      <td>고객사 소개</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/etc/privacy.html" target="_blank"></a></td>
+      <td class=""></td>
+    </tr>
+    <tr>
+      <td>연구소 소개</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/etc/privacy.html" target="_blank"></a></td>
+      <td class=""></td>
+    </tr>
+    <tr class="ok">
+      <td>찾아오시는 길</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/company/contact.html" target="_blank">contact</a></td>
+      <td class=""></td>
+    </tr>
+  </table>
+  <!-- 회사소개 -->
+  <h2>회사소개</h2>
+  <table>
+    <colgroup>
+      <col width="10%">
+      <col width="15%">
+      <col width="15%">
+      <col width="20%">
+      <col width="10%">
+      <col width="10%">
+      <col>
+    </colgroup>
+    <tbody>
+    <tr>
+      <td>회사소개</td>
+      <td>회사개요</td>
+      <td></td>
+      <td></td>
+      <td rowspan="11">company</td>
+      <td><a href="/paulmade/ko/etc/cookie.html" target="_blank"></a></td>
+      <td class=""></td>
+    </tr>
+    <tr class="ok">
+      <td>CEO 인사말</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/company/greeting.html" target="_blank">greeting</a></td>
+      <td class=""></td>
+    </tr>
+    <tr>
+      <td>회사연혁</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/etc/privacy.html" target="_blank"></a></td>
+      <td class=""></td>
+    </tr>
+    <tr>
+      <td>고객사 소개</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/etc/privacy.html" target="_blank"></a></td>
+      <td class=""></td>
+    </tr>
+    <tr>
+      <td>연구소 소개</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/etc/privacy.html" target="_blank"></a></td>
+      <td class=""></td>
+    </tr>
+    <tr class="ok">
+      <td>찾아오시는 길</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/company/contact.html" target="_blank">contact</a></td>
+      <td class=""></td>
+    </tr>
+  </table>
+
+
+   <!-- 제품소개 -->
+  <h2>제품소개</h2>
+  <table>
+    <colgroup>
+      <col width="10%">
+      <col width="15%">
+      <col width="15%">
+      <col width="20%">
+      <col width="10%">
+      <col width="10%">
+      <col>
+    </colgroup>
+    <tbody>
+    <tr>
+      <td>제품소개</td>
+      <td rowspan="4">제품소개</td>
+      <td>KF94</td>
+      <td></td>
+      <td rowspan="11">product</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KF80</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KFAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>일회용</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="ok">
+      <td>인증서&성적증명서</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/product/certificate.html" target="_blank">certificate</a></td>
+      <td></td>
+    </tr>
+    <tr class="ok">
+      <td>제품 카탈로그</td> 
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/product/catalog.html" target="_blank">catalog</a></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <!-- 홍보 -->
+  <h2>PR</h2>
+  <table>
+    <colgroup>
+      <col width="10%">
+      <col width="15%">
+      <col width="15%">
+      <col width="20%">
+      <col width="10%">
+      <col width="10%">
+      <col>
+    </colgroup>
+    <tbody>
+    <tr  class="ok">
+      <td>홍보센터</td>
+      <td rowspan="2">뉴스&공지사항</td>
+      <td>list</td>
+      <td></td>
+      <td rowspan="11">pr</td>
+      <td><a href="/paulmade/ko/pr/news_list.html" target="_blank">news_list</a></td>
+      <td class=""></td>
+    </tr>
+    <tr class="ok">
+      <td>view</td>
+      <td></td>
+      <td><a href="/paulmade/ko/pr/news_view.html" target="_blank">news_view</a></td>
+      <td class=""></td>
+    </tr>
+    <tr>
+      <td>ci소개</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/pr/news_view.html" target="_blank">news_view</a></td>
+      <td class=""></td>
+    </tr>
+  </table>
+ 
+  <!-- 고객센터 -->
+  <h2>CS</h2>
+  <table>
+    <colgroup>
+      <col width="10%">
+      <col width="15%">
+      <col width="15%">
+      <col width="20%">
+      <col width="10%">
+      <col width="10%">
+      <col>
+    </colgroup>
+    <tbody>
+    <tr class="ok">
+      <td>고객센터</td>
+      <td>자주하는 질문</td>
+      <td></td>
+      <td></td>
+      <td rowspan="11">cs</td>
+      <td><a href="/paulmade/ko/cs/faq.html" target="_blank">faq</a></td>
+      <td class=""></td>
+    </tr>
+    <tr class="ok">
+      <td>1:1 문의</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/cs/inquiry.html" target="_blank">inquiry</a></td>
+      <td class=""></td>
+    </tr>
+  </table>
+
+  <!-- 기타 -->
+  <h2>etc</h2>
+  <table>
+    <colgroup>
+      <col width="10%">
+      <col width="15%">
+      <col width="15%">
+      <col width="20%">
+      <col width="10%">
+      <col width="10%">
+      <col>
+    </colgroup>
+    <tbody>
+    <tr class="ok">
+      <td>etc</td>
+      <td>쿠키</td>
+      <td></td>
+      <td></td>
+      <td rowspan="11">etc</td>
+      <td><a href="/paulmade/ko/etc/cookie.html" target="_blank">cookie</a></td>
+      <td class=""></td>
+    </tr>
+    <tr class="ok">
+      <td>이메일무단수집거부</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/etc/email.html" target="_blank">email</a></td>
+      <td class=""></td>
+    </tr>
+    <tr class="ok">
+      <td>개인정보취급방침</td>
+      <td></td>
+      <td></td>
+      <td><a href="/paulmade/ko/etc/privacy.html" target="_blank">privacy</a></td>
+      <td class=""></td>
+    </tr>
+  </table>
+
+  
+
+
+</div>
+</body>
+</html>
