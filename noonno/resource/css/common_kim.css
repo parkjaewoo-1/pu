@@ -1,0 +1,19 @@
+*{position:relative; box-sizing:border-box;}
+.blind{font-size:0px;}
+.wrap .footer .foot_top + .foot_bottom{border-top:1px solid #666;}
+.wrap .footer .foot_top{padding:40px 0; display:flex; align-items: center; margin:0 auto; width:1280px;}
+.wrap .footer .foot_top .search_teach ul li{color:#fff; font-weight:700; font-size:32px;}
+.wrap .footer .foot_top .search_teach{flex:1;}
+.wrap .footer .foot_top .search_teach ul{display:flex; align-items: center}
+.wrap .footer .foot_top .search_teach ul li a{color:#fff; font-weight:400; font-size:24px; line-height:32px;}
+.wrap .footer .foot_top .search_teach ul li + li{margin-left:45px;}
+.wrap .footer .foot_top .search_teach ul li + li:before{content:''; display:inline-block; width:5px; height:5px; background:#666; border-radius:5px; position:absolute; top:50%; transform:translateY(-50%); left:-22px; }
+.wrap .footer .foot_top .search_teach ul li:first-child + li{margin-left:80px;}
+.wrap .footer .foot_top .search_teach ul li:first-child + li:before{content:''; display:inline-block; width:40px; height:1px; background:#8a8d8f; position:absolute; top:50%; transform:translateY(-50%); left:-60px;}
+.wrap .footer .foot_sns ul{display:flex; align-items: center;}
+.wrap .footer .foot_sns ul > li + li{margin-left:40px;}
+.wrap .footer .foot_sns ul > li a.youtube{width:31px; height:22px; display:block;  background:url(../img/common/youtube.png);}
+.wrap .footer .foot_sns ul > li a.blog{width:31px; height:26px; display:block;  background:url(../img/common/naverBlog.png);}
+.wrap .footer .foot_sns ul > li a.insta{width:26px; height:26px; display:block;
+ background:url(../img/common/instargram.png);}
+

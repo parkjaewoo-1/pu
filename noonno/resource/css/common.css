@@ -1,8 +1,9 @@
+
 .wrap .content {
     min-width: 1280px;
     padding: 0 50px;
 }
 .wrap .footer {
     min-width: 1280px;
-    background: #000;
+    background: #333;
 }
