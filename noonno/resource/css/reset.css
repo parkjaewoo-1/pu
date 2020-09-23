@@ -385,6 +385,7 @@ select, input, button, textarea {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
+            outline: 0;
 }
 select[type='checkbox'], input[type='checkbox'], button[type='checkbox'], textarea[type='checkbox'] {
     -webkit-appearance: none;
