@@ -16,4 +16,31 @@
 .wrap .footer .foot_sns ul > li a.blog{width:31px; height:26px; display:block;  background:url(../img/common/naverBlog.png);}
 .wrap .footer .foot_sns ul > li a.insta{width:26px; height:26px; display:block;
  background:url(../img/common/instargram.png);}
-
+.gnb_wrap{min-width:1280px; position:fixed; width:100%; z-index:100;}
+.gnb_wrap .gnb_top{padding:10px 80px; }
+.gnb_wrap .gnb_top:after{clear:both; display:block; content:'';}
+.gnb_wrap .gnb_top ul{display:flex; align-content: center; float:right;}
+.gnb_wrap .gnb_top ul li + li {margin-left:15px;}
+.gnb_wrap .gnb_top ul li a{font-size:14px; color:#666; font-weight:400;}
+.gnb_wrap .gnb_top ul li + li:before{content:''; display:inline-block; width:2px; height:2px; background:#666; border-radius:5px; position:absolute; left:-8px; top:5px;}
+.gnb_wrap .gnb_top ul li a.point01{color:#ED1C24; font-weight:600;}
+.gnb_wrap .gnb_bottom{border-top:1px solid #eee; padding:30px 80px; display:flex; align-items: center; }
+.gnb_wrap .gnb_bottom.on:after{width:100%; height:250px; background:#FAFAFA; content:''; display:block; position:absolute; bottom:-250px; left:0; z-index:-1; }
+.depth_02 {position:absolute; top:70px; display:none; width:100%;}
+.depth_02 > li{line-height:45px;}
+.depth_02 > li > a{font-size:16px; color: #3B302F; border-bottom:1px solid #FAFAFA; letter-spacing:-2px; }
+.depth_02 > li > a:hover{border-bottom:1px solid #3B302F;}
+.gnb{flex:1; text-align:center;}
+.gnb > ul{display:inline-block;}
+.gnb > ul > li{float:left;}
+.gnb > ul > li > a{font-size:18px; font-weight:600; color: #3B302F; padding:0 20px;}
+.gnb > ul > li > a .olympiad{color:#B7976B; padding-left:42px; display:inline-block;}
+.gnb > ul > li > a .olympiad:before{content:''; display:inline-block; width:30px; height:24px; background:url(../img/common/ic_olympiad.png); position:absolute; left:0; top:-3px;}
+.gnb > ul > li + li{margin-left:20px;}
+.gnb > ul > li:last-child > a:after{content:''; display:inline-block; width:180px; height:14px; background:#f8eee2;
+border-radius:300px; position:absolute; bottom:-3px; left:20px; z-index:-1;}
+.gnb > ul > li:last-child > ul > li > a{color:#B7976B;}
+.gnb > ul > li:last-child > ul > li > a:hover{border-bottom:1px solid #B7976B;}
+.gnb > ul:after{clear:both; display:block; content:''; }
+.right_menu ul{display:flex; align-content: center;}
+.right_menu > ul > li + li{margin-left:40px;}
