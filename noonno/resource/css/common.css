@@ -4,8 +4,7 @@
     box-sizing:border-box;
 }
 .wrap .content {
-
-    padding-top:140px;
+    padding:140px 0 150px; 
 }
 .wrap .footer {
     background: #333;
@@ -118,12 +117,15 @@ h2.sub-tit {
 .board-box.board-gallery li .board .info{
     padding:25px 20px 0;
 }
-.board-box.board-gallery li .board .info .board-tit{
-    margin-bottom: 15px;
-    color:#333;
+.board-box.board-gallery li .board .info .board-tit {
+    padding-bottom: 15px;
+    color: #333;
     font-weight: 700;
-    font-size:22px;
+    font-size: 22px;
     font-family: 'Noto Sans KR', sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .board-box.board-gallery li .board .info .br-cate,
 .board-box.board-gallery li .board .info .date{
@@ -144,6 +146,8 @@ h2.sub-tit {
 /* 이벤트페이지 마우스 이벤트 등 */
 .board-box .thumb .mousehover{
     display:flex;
+    display:-ms-flexbox;
+    display:-webkit-box;
     position: absolute;
     top:0;
     left:0;
@@ -164,6 +168,8 @@ h2.sub-tit {
     width: 100%;
     text-align: center;
     flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
 }
 .board-box .thumb .mousehover .aiignbox .mouseho-tit{
     margin-bottom:15px;
@@ -227,13 +233,33 @@ h2.sub-tit {
     text-align: center;
     line-height: 28px;
 }
-.board-view .br-view-top .br-cate{
+.board-view .br-view-top span {
+    vertical-align: middle;
+}
+.board-view .br-view-top .view-top-txt{
     padding-right:15px;
     border-right:1px solid #e5e5e5;
     box-sizing: border-box;
 }
+.board-view .br-view-top .view-top-txt02{
+    margin:0 8px 0 20px
+}
+.board-view .br-view-top .end-txt{
+    color:#ED1C24;
+}
+.board-view .br-view-top .winner-link{
+    padding:6px 10px 5px 11px;
+    color:#fff;
+    background:#333;
+    border-radius:5px;
+    box-sizing: border-box;
+}
 .board-view .br-view-top .date{
     margin-left:15px;
+}
+.board-view .br-view-top .dday_date,
+.board-view .br-view-top .end-txt{
+    margin-right:25px
 }
 .br-view-cont {
     margin-top: 53px;
@@ -266,6 +292,9 @@ h2.sub-tit {
 .backbtn .listback:hover {
     color: #ED1C24;
     transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
 }
 
 
