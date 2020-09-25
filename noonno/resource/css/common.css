@@ -1,8 +1,11 @@
 
+*{
+    position:relative;
+    box-sizing:border-box;
+}
 .wrap .content {
-    width: 1280px;
-    padding: 0 50px;
-    margin:0 auto;
+
+    padding-top:140px;
 }
 .wrap .footer {
     min-width: 1280px;
@@ -16,8 +19,11 @@
 
 /* 서브페이지 정렬 */
 .inner {
-    margin: 60px 0;
-    padding:0 50px;
+    width:1280px;
+    padding: 0 50px;
+    
+    margin:70px auto 0 auto;
+
 }
 
 /* 게시판 타이틀, 검색바 */
@@ -271,6 +277,9 @@ h2.sub-tit {
     height:30px;
     margin:0 4px;
 }
+.paging-box .number:hover{
+    color: #ED1C24;
+}
 .paging.paging-type-a .paging-box .number.active{
     border-radius: 50%;
     color:#fff;
@@ -279,5 +288,6 @@ h2.sub-tit {
 .paging.paging-type-b .paging-box .number.active{
     color:#ED1C24;
     font-weight: 500;
-    
+
 }
+
