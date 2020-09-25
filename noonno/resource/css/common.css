@@ -4,12 +4,11 @@
     box-sizing:border-box;
 }
 .wrap .content {
-
-    padding-top:140px;
+    padding:140px 0 150px; 
 }
 .wrap .footer {
-    min-width: 1280px;
     background: #333;
+    min-width: 1280px;
 }
 
 
@@ -20,32 +19,32 @@
 /* 서브페이지 정렬 */
 .inner {
     width:1280px;
-    padding: 0 50px;
     
     margin:70px auto 0 auto;
+    padding: 0 50px;
 
 }
 
 /* 게시판 타이틀, 검색바 */
 h2.sub-tit {
+    margin-bottom: 53px;
     font-size: 40px;
     text-align: center;
-    margin-bottom: 53px;
 }
 
 .board-search form {
+    position: relative;
     width: 380px;
     height: 30px;
     margin: 0 auto;
-    position: relative;
 }
 .board-search form input{
     width:100%;
     height:100%;
     padding-bottom:6px;
     border-bottom: 2px solid #333;
-    box-sizing: border-box;
     font-size: 18px;
+    box-sizing: border-box;
     letter-spacing: -1px;
     outline: 0;
 }
@@ -54,8 +53,8 @@ h2.sub-tit {
 }
 .board-search form button.btn-search {
     position: absolute;
-    right:0;
     top: 3px;
+    right:0;
     width: 15px;
     height:16px;
     background:url(../../resource/img/common/sub_search_icon.png);
@@ -78,8 +77,8 @@ h2.sub-tit {
     margin-top:20px;
 }
 .board-wrap .board-box.board-gallery::after{
-    content:'';
     display:block;
+    content:'';
     clear: both;
 }
 .board-box.board-gallery li{
@@ -97,32 +96,43 @@ h2.sub-tit {
     position: relative;
 }
 .board-box.board-gallery li .board .thumb{
-    width:100%;
-    max-height:228px;
     overflow:hidden;
-    border-radius: 0 0 50px 0;
     position: relative;
+    width:100%;
+    background:#fff;
+    max-height:228px;
+    border-radius: 0 0 50px 0;
+    box-sizing: border-box;
 }
 .board-box.board-gallery li .board .thumb img{
     display:block;
     max-width:100%;
 }
+.board-box.board-gallery li .board .thumb img.filterLum{
+    mix-blend-mode: luminosity;
+    -webkit-mix-blend-mode: luminosity;
+    -ms-mix-blend-mode: luminosity;
+    -moz-mix-blend-mode: luminosity;
+}
 .board-box.board-gallery li .board .info{
     padding:25px 20px 0;
 }
-.board-box.board-gallery li .board .info .board-tit{
-    font-size:22px;
+.board-box.board-gallery li .board .info .board-tit {
+    padding-bottom: 15px;
+    color: #333;
     font-weight: 700;
-    margin-bottom: 15px;
-    color:#333;
+    font-size: 22px;
     font-family: 'Noto Sans KR', sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .board-box.board-gallery li .board .info .br-cate,
 .board-box.board-gallery li .board .info .date{
     display:inline-block;
-    font-size: 16px;
-    font-weight: 400;
     color:#333;
+    font-weight: 400;
+    font-size: 16px;
 }
 .board-box.board-gallery li .board .info .br-cate{
     padding-right:15px;
@@ -135,39 +145,74 @@ h2.sub-tit {
 
 /* 이벤트페이지 마우스 이벤트 등 */
 .board-box .thumb .mousehover{
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-box;
     position: absolute;
-    width:100%;
-    height:100%;
     top:0;
     left:0;
+    width:100%;
+    height:100%;
     background:#3b302f;
-    opacity:90%;
     color:#fff;
+    opacity:90%;
     align-items: center;
-    display:flex;
     visibility: hidden;
 }
 .board-box .thumb .mousehover.on{
     opacity:90%;
     visibility: visible;
 }
+
 .board-box .thumb .mousehover .aiignbox {
-    flex: 1;
     width: 100%;
     text-align: center;
+    flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
 }
 .board-box .thumb .mousehover .aiignbox .mouseho-tit{
+    margin-bottom:15px;
     font-size: 30px;
-    margin-bottom:15px
 }
 .board-box .thumb .mousehover .aiignbox  .mouseho-txt{
     font-size: 17px;
 }
+.board-box .wabal-dday {
+    position: absolute;
+    right: 45px;
+    bottom: 60px;
+    padding: 8px 20px;
+    background: #ed1c24;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    letter-spacing: 0;
+}
+.board-box .wabal-dday-end {
+    position: absolute;
+    right: 45px;
+    bottom: 60px;
+    padding: 8px 20px;
+    background: #3B302F;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-radius: 7px;
+    box-sizing: border-box;
+    letter-spacing: 0;
+}
+
 /* 게시판 보기 */
 .board-view .br-view-top .share {
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
 }
 
 .board-view .br-view-top {
@@ -184,17 +229,37 @@ h2.sub-tit {
 }
 
 .board-view .br-view-top p {
+    font-size: 16px;
     text-align: center;
     line-height: 28px;
-    font-size: 16px;
 }
-.board-view .br-view-top .br-cate{
+.board-view .br-view-top span {
+    vertical-align: middle;
+}
+.board-view .br-view-top .view-top-txt{
     padding-right:15px;
     border-right:1px solid #e5e5e5;
     box-sizing: border-box;
 }
+.board-view .br-view-top .view-top-txt02{
+    margin:0 8px 0 20px
+}
+.board-view .br-view-top .end-txt{
+    color:#ED1C24;
+}
+.board-view .br-view-top .winner-link{
+    padding:6px 10px 5px 11px;
+    color:#fff;
+    background:#333;
+    border-radius:5px;
+    box-sizing: border-box;
+}
 .board-view .br-view-top .date{
     margin-left:15px;
+}
+.board-view .br-view-top .dday_date,
+.board-view .br-view-top .end-txt{
+    margin-right:25px
 }
 .br-view-cont {
     margin-top: 53px;
@@ -205,7 +270,7 @@ h2.sub-tit {
 }
 .br-view-cont .textbox {
     width:780px;
-    margin:60px auto 0
+    margin:60px auto 0;
 }
 .br-view-cont .textbox p{
     font-size: 18px;
@@ -213,13 +278,13 @@ h2.sub-tit {
     letter-spacing:-2px;
 }
 .backbtn{
-    text-align:center;
     margin-top:60px;
+    text-align:center;
 }
 .backbtn .listback {
+    display: inline-block;
     padding: 17px 54px;
     border: 1px solid;
-    display: inline-block;
     color: #333;
     box-sizing: border-box;
     border-radius: 30px;
@@ -227,13 +292,16 @@ h2.sub-tit {
 .backbtn .listback:hover {
     color: #ED1C24;
     transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
 }
 
 
 /* 페이징*/
 .paging-box{
-    text-align: center;
     font-size: 0;
+    text-align: center;
 }
 .paging-box li{
     display:inline-block;
@@ -246,31 +314,31 @@ h2.sub-tit {
     font-family: Poppins;
 }
 .paging-box .prev, .paging-box .next, .paging-box .first, .paging-box .last{
-    text-indent: -9999px;
     width:27px;
     height: 27px;
+    text-indent: -9999px;
     background-repeat: no-repeat;
     background-position:center;
 }
 .paging-box .first{
+    margin-right:10px;
     background-image:url(../../resource/img/common/pag_first.png);
     background-size: 14px;
-    margin-right:10px;
 }
 .paging-box .last{
+    margin-left:10px;
     background-image:url(../../resource/img/common/pag_last.png);
     background-size: 14px;
-    margin-left:10px;
 }
 .paging-box .prev{
+    margin-right:26px;
     background-image:url(../../resource/img/common/pag_prev.png);
     background-size: 7px;
-    margin-right:26px;
 }
 .paging-box .next{
+    margin-left:26px;
     background-image:url(../../resource/img/common/pag_next.png);
     background-size: 7px;
-    margin-left:26px
 }
 .paging-box .number{
     width:30px;
@@ -281,9 +349,9 @@ h2.sub-tit {
     color: #ED1C24;
 }
 .paging.paging-type-a .paging-box .number.active{
-    border-radius: 50%;
+    background:#3B302F;
     color:#fff;
-    background:#3B302F
+    border-radius: 50%;
 }
 .paging.paging-type-b .paging-box .number.active{
     color:#ED1C24;
