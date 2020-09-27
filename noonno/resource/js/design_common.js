@@ -7,19 +7,26 @@ $(document).ready(function(){
     brandSite();
     locaMenu();
     shareBtn();
+    compareBox();
 })
 
 
 function gnb(){
 
     $('.gnb > ul > li > a').mouseenter(function(){
+        $('.depth_02 > li > a').fadeIn('fast');
       $('.depth_02').slideDown('fast');
+
       $('.gnb_bottom').addClass('on');
+
+
 
     });
 
     $('.gnb_wrap').mouseleave(function(){
       $('.depth_02').slideUp('fast');
+      $('.depth_02 > li > a').fadeOut('fast');
+
       $('.gnb_bottom').removeClass('on');
 
     });
@@ -59,4 +66,22 @@ function shareBtn(){
         }
 
     });
+}
+function compareBox(){
+    $('.compare_box > .tit').click(function(){
+        var thP = $(this).parent('.compare_box');
+        if( thP.hasClass('on') == true){
+            $(this).removeClass('on');
+            thP.removeClass('on');
+            TweenMax.to(thP, 0.6, {bottom: '-350px', ease:power4});
+            $('.tab_cont').removeClass('on')
+        }else{
+            $(this).addClass('on');
+            thP.addClass('on');
+            TweenMax.to(thP, 0.6, {bottom:'0', ease:power4});
+            $('.tab_cont').addClass('on');
+        }
+    });
+
+
 }
