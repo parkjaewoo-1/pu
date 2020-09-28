@@ -1,0 +1,97 @@
+div#etc-search-product {
+  margin-top: 60px;
+}
+.board-box.board-gallery-col4 {
+  margin: 20px 0 40px;
+}
+.board-box.board-gallery-col4 li {
+  width: 271px;
+  float: left;
+  margin:0 32px 62px 0;
+}
+
+.board-box.board-gallery-col4:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.board-box.board-gallery-col4 li:nth-child(4n) {
+  margin-right: 0;
+}
+.board-box.board-gallery-col4 .board {
+  display: block;
+}
+.board-box.board-gallery-col4 .board .thumb {
+  margin-bottom: 14px;
+}
+.board-box.board-gallery-col4 .board .info .board-tit{
+  font-size: 20px;
+  letter-spacing: -2px;
+  margin-bottom:13px;
+  font-weight: 700;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.board-box.board-gallery-col4 .board .info p {
+  font-size: 14px;
+  width: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.board-wrap .more {text-align: center;}
+.board-wrap .more > a {
+    display: inline-block;
+    padding: 17px 29px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    background: #fafafa;
+}
+.board-wrap .more > a:hover {
+  border: 1px solid #666;
+  box-sizing: border-box;
+  background: #666;
+  color:#fff;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+}
+.board-wrap .more > a .more-num {
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.board-wrap .more > a .more-txt {
+    margin-right: 30px;
+}
+
+
+
+/* 검색결과 false */
+.etc-not-search {
+  background: #fafafa;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.etc-not-search .not-search-al {
+  display: inline-block;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.etc-not-search .not-search-al h3 {
+  margin: 15px 0 7px;
+  font-size: 30px;
+  letter-spacing: -2px;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 45px;
+}
+
+.etc-not-search .not-search-al p {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -2px;
+  font-family: 'Noto Sans KR', sans-serif;
+}

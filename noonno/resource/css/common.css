@@ -147,7 +147,6 @@ h2.sub-tit {
 .board-box .thumb .mousehover{
     display:flex;
     display:-ms-flexbox;
-    display:-webkit-box;
     position: absolute;
     top:0;
     left:0;
@@ -209,7 +208,7 @@ h2.sub-tit {
 }
 
 /* 게시판 보기 */
-.board-view .br-view-top .share {
+.board-view .br-view-top .share_btn {
     position: absolute;
     top: 0;
     right: 0;
@@ -217,7 +216,7 @@ h2.sub-tit {
 
 .board-view .br-view-top {
     position: relative;
-    height: 28px;
+    height: 35px;
 }
 
 .board-view .br-view-top .share a {
@@ -231,7 +230,7 @@ h2.sub-tit {
 .board-view .br-view-top p {
     font-size: 16px;
     text-align: center;
-    line-height: 28px;
+    line-height: 35px;
 }
 .board-view .br-view-top span {
     vertical-align: middle;
