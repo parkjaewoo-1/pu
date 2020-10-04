@@ -30,6 +30,10 @@ h2.sub-tit {
     margin-bottom: 53px;
     font-size: 40px;
     text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
 }
 
 .board-search form {
