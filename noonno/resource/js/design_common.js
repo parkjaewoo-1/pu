@@ -8,6 +8,7 @@ $(document).ready(function(){
     locaMenu();
     shareBtn();
     compareBox();
+    aboutTab();
 })
 
 
@@ -44,12 +45,20 @@ function brandSite(){
   });
 }
 function locaMenu(){
-    $('.loca_sel').mouseenter(function(){
-        $(this).children('.hidden_div').stop().slideDown('fast');
+    $('.loca_sel').click(function(){
+        if( $(this).hasClass('on') == true){
+            $(this).removeClass('on');
+            $(this).children('.hidden_div').stop().slideUp('fast');
+        }else{
+            $(this).children('.hidden_div').stop().slideDown('fast');
+            $(this).addClass('on');
+        }
+
+
     })
 
     $('.loca_sel').mouseleave(function(){
-        $(this).children('.hidden_div').stop().slideUp('fast');
+
     });
 }
 function shareBtn(){
@@ -84,4 +93,16 @@ function compareBox(){
     });
 
 
+}
+function aboutTab(){
+
+    $('.edu_service .list_tab li').click(function(){
+        var tIdx = $(this).index();
+
+        $('.edu_service .list_tab li.on').removeClass('on');
+        $(this).addClass('on');
+         $('.edu_service .list_content .tab_cont.on').removeClass('on');
+        $('.edu_service .list_content .tab_cont').eq(tIdx).addClass('on');
+
+    });
 }
