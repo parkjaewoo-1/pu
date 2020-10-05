@@ -24,10 +24,28 @@
 .member-wrap .member_tab li:first-child a {margin-left:0}
 .member-wrap .member_tab li.on a {margin-right:1px;border:1px solid #ED1C24;border-bottom:0;color:#ED1C24}
 .member-wrap .member_tabcon {height:633px}
-.member-wrap .member_tabcon li {overflow:hidden;position:absolute;width:100%;opacity:0;filter:alpha(opacity=50)}
-.member-wrap .member_tabcon li.on {opacity:1;filter:alpha(opacity=100)}
-.member-wrap .member_tabcon li > img {position:relative}
-.member-wrap .member_tabcon li > span {position:absolute;top:282px;left:540px;z-index:1}
+.member-wrap .member_tabcon li {overflow:hidden;position:absolute;width:100%;opacity:0;visibility:hidden;height: 663px;}
+.member-wrap .member_tabcon li.on {opacity:1;visibility:visible}
+.member-wrap .member_tabcon li .thum {
+  position: relative;
+  z-index: 2;
+}
+.member-wrap .member_tabcon li .video-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  cursor:pointer;
+}
+.member-wrap .member_tabcon li .player {
+  position: relative;
+  top: 0;
+  width: 98%;
+  height: 98%;
+  margin: 0 auto;
+  left: 1%;
+}
 
 /*회원서비스 - 눈높이학습관 */
 .round_img {overflow:hidden;border-radius:0 0 100px 0;background:#fff}

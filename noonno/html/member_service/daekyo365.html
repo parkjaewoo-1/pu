@@ -15,6 +15,9 @@
   <script type="text/javascript" src="../../resource/js/design_common.js"></script>
   <script type="text/javascript" src="../../resource/js/board_event.js" ></script>
   <script type="text/javascript" src="../../resource/js/member.js" ></script>
+
+  <script src="http://www.youtube.com/iframe_api"></script>
+
 </head>
 <body>
   <div class="wrap sub">
@@ -145,19 +148,120 @@
           
           <ul class="member_tabcon">
             <li class="tabcon1 on">
-              <span><img src="../../resource/img/member_play.png" alt="재생버튼"></span>
-              <img src="../../resource/img/daekyo365_01.jpg" alt="영상1">
+              <div class="thum">
+                <div class="video-play-btn playbtn1">
+                  <img src="../../resource/img/member_play.png" alt="재생버튼">
+                </div>
+                <img src="../../resource/img/daekyo365_01.jpg" alt="영상1">
+              </div>
+              <div id="player1" class="player"></div>
             </li>
             <li class="tabcon2">
-              <span><img src="../../resource/img/member_play.png" alt="재생버튼"></span>
-              <img src="../../resource/img/daekyo365_01.jpg" alt="영상2">
+              <div class="thum">
+                <div class="video-play-btn playbtn2">
+                  <img src="../../resource/img/member_play.png" alt="재생버튼">
+                </div>
+                <img src="../../resource/img/daekyo365_01.jpg" alt="영상1">
+              </div>
+              <div id="player2" class="player"></div>
             </li>
             <li class="tabcon3">
-              <span><img src="../../resource/img/member_play.png" alt="재생버튼"></span>
-              <img src="../../resource/img/daekyo365_01.jpg" alt="영상3">
+              <div class="thum">
+                <div class="video-play-btn playbtn3">
+                  <img src="../../resource/img/member_play.png" alt="재생버튼">
+                </div>
+                <img src="../../resource/img/daekyo365_01.jpg" alt="영상1">
+              </div>
+              <div id="player3" class="player"></div>
             </li>
           </ul>
+          <script>
+          // 2. This code loads the IFrame Player API code asynchronously.
+          var tag = document.createElement('script');
 
+          tag.src = "https://www.youtube.com/iframe_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+          // 3. This function creates an <iframe> (and YouTube player)
+          //    after the API code downloads.
+          var youTubePlayer1;
+          var youTubePlayer2;
+          var youTubePlayer3;
+          function onYouTubeIframeAPIReady() {
+            youTubePlayer1 = new YT.Player('player1', {
+              height: 'auto',
+              width: 'auto',
+              videoId: '7W4uqhzj54M',
+              // playerVars:{
+              //   controls:0,
+              //   fs:0,
+              // },
+              events: {
+                
+              }
+            });
+            youTubePlayer2 = new YT.Player('player2', {
+              height: 'auto',
+              width: 'auto',
+              videoId: 'Fd7ajYtDuD0',
+              // playerVars:{
+              //   controls:0,
+              //   fs:0,
+              // },
+              events: {
+                
+              }
+            });
+            youTubePlayer3 = new YT.Player('player3', {
+              height: 'auto',
+              width: 'auto',
+              videoId: 'gwPM_EDY2ro',
+              // playerVars:{
+              //   controls:0,
+              //   fs:0,
+              // },
+              events: {
+                
+              }
+            });
+          }
+          $(document).ready(function(){
+            $('.playbtn1').click(function(){
+              $(this).parent().find('img').fadeOut();
+              // $('.thum img').fadeOut();
+                youTubePlayer1.playVideo();//재생
+
+            });
+            $('.playbtn2').click(function(){
+              $(this).parent().find('img').fadeOut();
+              // $('.thum img').fadeOut();
+                youTubePlayer2.playVideo();//재생
+
+            });
+            $('.playbtn3').click(function(){
+              $(this).parent().find('img').fadeOut();
+              // $('.thum img').fadeOut();
+                youTubePlayer3.playVideo();//재생
+
+            });
+
+            var tabTit = $(".member_tab > li"),
+            tabCon = $(".member_tabcon > li");
+            tabTit.click(function(){       
+              var result = $(this).index();	
+              tabTit.removeClass("on");     
+              $(this).addClass("on");       
+              tabCon.removeClass("on");			
+              tabCon.eq(result).addClass("on");		
+              $('.thum img').fadeIn();
+              youTubePlayer1.stopVideo();
+              youTubePlayer2.stopVideo();
+              youTubePlayer3.stopVideo();
+            });
+            
+          });
+          </script>
 
         </div>
 
