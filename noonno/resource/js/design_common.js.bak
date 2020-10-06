@@ -16,7 +16,7 @@ function gnb(){
 
     $('.gnb > ul > li > a').mouseenter(function(){
       $('.gnb_bottom').addClass('on');
-      TweenMax.to( '.depth_02 > li > a', 0.6, {autoAlpha: 1, display:'inline-block', ease:power4, });
+      TweenMax.to( '.depth_02 > li > a', 0.6, {autoAlpha: 1, display:'block', ease:power4, });
 	  //$('.depth_02').slideDown('fast');
 
       
