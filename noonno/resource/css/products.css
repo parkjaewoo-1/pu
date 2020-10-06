@@ -87,6 +87,7 @@
   font-size: 14px;
   line-height: 22px;
   color: #666;
+  display:block;
 }
 .prd-search-wrap .se-group .se-chkbox-wrap .check_box .tooltip-info a img {
   margin-left: 5px;
