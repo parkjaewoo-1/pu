@@ -1,0 +1,110 @@
+.p-b-17{
+  padding-bottom:17px;
+}
+.p20{
+  padding:20px 0;
+}
+.p-t-17{
+  padding-top:17px;
+}
+.se-group{
+  border-bottom:1px solid #C4C4C4;
+  box-sizing:border-box;
+}
+.se-group.brno{
+  border:0;
+}
+.prd-search-wrap .se-group .se-chkbox-wrap .check_box span {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  vertical-align: text-top;
+  color:#666;
+}
+.prd-search-wrap .se-group .se-chkbox-wrap .check_box input[type='checkbox'] + label:after,
+.prd-search-wrap .se-group .se-chkbox-wrap .check_box input[type='checkbox'] + label:before{
+  top:1px;
+}
+
+.prd-search-wrap .search-group-tit {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 0 42px 0 24px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  color: #ed1c24;
+  font-weight: 500;
+  border-right: 1px solid #C4C4C4;
+  box-sizing: border-box;
+}
+.prd-search-wrap .search-group-tit span {
+  margin-left: 17px;
+}
+.prd-search-wrap .se-group > div,
+.prd-search-wrap .se-group .se-chkbox-wrap .check_box > div{
+  display:inline-block;
+  vertical-align: middle;
+}
+.prd-search-wrap .se-group .se-chkbox-wrap .check_box > div{
+  margin-left:30px;
+}
+.prd-search-wrap .se-group .se-chkbox-wrap .check_box > div:first-child{
+  margin-left:44px;
+}
+.prd-search-wrap .se-group .se-chkbox-wrap .check_box .tooltip {
+  display: inline-block;
+  margin-left:5px;
+  position:relative;
+  cursor:pointer;
+}
+.prd-search-wrap .se-group .se-chkbox-wrap .check_box .prd-tooltip {
+  vertical-align: middle;
+}
+.prd-search-wrap .se-group .se-chkbox-wrap .check_box .tooltip-info {
+  position: absolute;
+  width: 225px;
+  left: 0;
+  height: 187px;
+  top: 20px;
+  z-index: 10;
+  background: url(../img/prd/tooltipbg.png);
+  background-size: 225px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.prd-search-wrap .se-group .se-chkbox-wrap .check_box .tooltip-info.on{
+  opacity: 1;
+}
+.prd-search-wrap .se-group .se-chkbox-wrap .check_box .tooltip-info > div {
+  padding: 27px 18px;
+}
+.prd-search-wrap .se-group .se-chkbox-wrap .check_box .tooltip-info a {
+  font-size: 14px;
+  line-height: 22px;
+  color: #666;
+}
+.prd-search-wrap .se-group .se-chkbox-wrap .check_box .tooltip-info a img {
+  margin-left: 5px;
+}
+.tooltip-info .tooltip-tit {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  line-height: 25px;
+}
+.tooltip-info .tooltip-txt {
+  font-size: 14px;
+  line-height: 22px;
+  color: #666;
+}
+.tooltip-info .tooltip-line {
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  margin: 13px 0;
+}
