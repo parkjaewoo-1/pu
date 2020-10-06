@@ -12,7 +12,6 @@
   <link href="../../resource/css/member_service.css" rel="stylesheet" type="text/css"/>
   <script type="text/javascript" src="../../resource/js/jquery-1.8.2.min.js"></script>
   <script type="text/javascript" src="../../resource/js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="../../resource/js/plugin.js"></script>
   <script type="text/javascript" src="../../resource/js/design_common.js"></script>
   <script type="text/javascript" src="../../resource/js/board_event.js" ></script>
   <script type="text/javascript" src="../../resource/js/member.js" ></script>
@@ -116,7 +115,7 @@
             </ul>
           </div>
         </div>
-        <div class="loca_sel">눈높이학습관
+        <div class="loca_sel">눈높이365
           <span class="loca_arrow blind">더보기</span>
           <div class="hidden_div">
             <ul class="hidden_loca">
@@ -127,92 +126,46 @@
           </div>
         </div>
       </div>
-      <!-- 회원서비스 - 눈높이학습관 -->
+      <!-- 회원서비스 - 눈높이365 -->
       <div class="inner">
-        <h2 class="sub-tit">눈높이학습관</h2>
-        <div  class="learning-wrap">
-          <div class="round_img">
-            <img src="../../resource/img/learningcenter_01.png" alt="큰이미지">
-          </div>
-          <div class="learning_img2">
-            <div class="left_wrap">
-              <img src="../../resource/img/learningcenter_02.jpg" alt="좌측이미지">
-            </div>
-            <div class="right_wrap">
-              <div class="list_tit">
-                <span>쉽고 간편하고 빠르게!</span><strong>PC와 모바일</strong>에서 만나보세요
-                <p class="small_txt">언제 어디서나 간편하게 스마트폰과 PC를 통해 듣기 학습과
-                  동영상 학습을 할 수 있는 온라인 학습관입니다.</p>
-              </div>
-              <ul class="list_img">
-                <li><img src="../../resource/img/learningcenter_02_1.png" alt="우측이미지"></li>
-                <li><img src="../../resource/img/learningcenter_02_2.png" alt="우측이미지"></li>
-              </ul>
-            </div>
-
-          </div>
+        <h2 class="sub-tit">눈높이365</h2>
+        <div class="member-subtit">
+          <p class="btn_tit"><strong>비대면으로 365일</strong>, 선생님의 따뜻한 <strong>36.5도의 온기</strong>를 느낄 수 있는 눈높이365 온라인 학습 시스템</p>
+          <div class="btn_box">눈높이선생님에게 원격 수업 제공을 받는 눈높이365는 수업 초대 메일의 링크를 통해 접속해 눈높이의 다양한 수업을 비대면으로도 학습할 수 있다.</div>
+          <div class="btn_wrap">
+            <a class="membership" href="#">눈높이365 상담 신청하기</a>
+          </div>        
         </div>
-      </div>
-      <div class="fullbg">
-        <div class="inner">
-          <div  class="learning-wrap">
-            <h3 class="member_txt">눈높이학습관 구성</h3>
-            <p class="member_subtxt">교재 문제 풀이 강의, 오디오 듣기 및 샘플 맛보기로 구성되어 바로바로 쉽게 학습 할 수 있습니다. </p>
-            <ul class="composition">
-              <li>
-                <p class="thumb"><img src="../../resource/img/learningcenter_03_1.png" alt="좌측이미지"></p>
-                <p class="tit_txt">제품별 학습방</p>
-                <p class="sub_txt">눈높이 학습자의 각 과목별 제품에 대한 학습 콘텐츠를 제공</p>
-              </li>
-              <li>
-                <p class="thumb"><img src="../../resource/img/learningcenter_03_2.png" alt="우측이미지"></p>
-                <p class="tit_txt">평가방</p>
-                <p class="sub_txt">학습성향검사, 학교시험대비,총괄평가,자격증시험대비 등 다양한 평가콘텐츠를 제공</p>
-              </li>
-            </ul>
-
-        </div>
-
-        </div>
-      </div>
-      <div class="inner">
-        <div  class="learning-wrap">
-          <div class="last_tit">
-            <strong>눈높이학습관,</strong>이렇기 때문에 필요합니다.
-          </div>
-          <ul class="last_con">
-            <li class="fir">
-              <p class="num">01</p>
-              <p class="num_txt">학교 진도에 맞춰 학교시험대비</p>
-              <dl class="num_con">
-                <dt>학교시험대비</dt>
-                <dd>단원별 핵심 개념 및 단원별 평가와 서술형 강화 문제지 제공</dd>
-              </dl>
-            </li>
-            <li class="sec">
-              <p class="num">02</p>
-              <p class="num_txt">중간/기말고사 총괄평가</p>
-              <dl class="num_con">
-                <dt>총괄평가</dt>
-                <dd>중간, 기말고사 대비 초등학생 성취도평가, 중등실전문제 제공</dd>
-              </dl>
-            </li>
-            <li class="thi">
-              <p class="num">03</p>
-              <p class="num_txt">다양한 자격증시험대비 기출문제 제공</p>
-              <dl class="num_con">
-                <dt>자격증시험대비</dt>
-                <dd>MAT 수학능력평가시험 대비문제, EBS토셀 대비 문제, KP한자검정시험 대비문제, TESL어휘능력자격검정 대비문제
-                </dd>
-              </dl>
-            </li>
-
+        <div  class="member-wrap">
+          <ul class="member_tab">
+            <li class="tab1 on"><a href="javascript:void(0)">티저</a></li>
+            <li class="tab2"><a href="javascript:void(0)">사용안내</a></li>
+            <li class="tab3"><a href="javascript:void(0)">사용사례</a></li>
           </ul>
+          
+          <ul class="member_tabcon">
+            <li class="tabcon1 on">
+              <span><img src="../../resource/img/member_play.png" alt="재생버튼"></span>
+              <img src="../../resource/img/daekyo365_01.jpg" alt="영상1">
+            </li>
+            <li class="tabcon2">
+              <span><img src="../../resource/img/member_play.png" alt="재생버튼"></span>
+              <img src="../../resource/img/daekyo365_01.jpg" alt="영상2">
+            </li>
+            <li class="tabcon3">
+              <span><img src="../../resource/img/member_play.png" alt="재생버튼"></span>
+              <img src="../../resource/img/daekyo365_01.jpg" alt="영상3">
+            </li>
+          </ul>
+
+
         </div>
+
+
+
+
+
       </div>
-
-
-
     </div>
     <div class="footer">
       <div class="foot_top">

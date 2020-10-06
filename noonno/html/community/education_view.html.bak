@@ -9,13 +9,11 @@
   <link href="../../resource/css/reset.css" rel="stylesheet" type="text/css"/>
   <link href="../../resource/css/common.css" rel="stylesheet" type="text/css"/>
   <link href="../../resource/css/common_kim.css" rel="stylesheet" type="text/css"/>
-  <link href="../../resource/css/member_service.css" rel="stylesheet" type="text/css"/>
   <script type="text/javascript" src="../../resource/js/jquery-1.8.2.min.js"></script>
   <script type="text/javascript" src="../../resource/js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="../../resource/js/plugin.js"></script>
   <script type="text/javascript" src="../../resource/js/design_common.js"></script>
   <script type="text/javascript" src="../../resource/js/board_event.js" ></script>
-  <script type="text/javascript" src="../../resource/js/member.js" ></script>
+
 </head>
 <body>
   <div class="wrap sub">
@@ -101,12 +99,13 @@
       </div>
 
     </div>
+
     <div class="content">
       <div class="location">
         <div class="loca_home">
           <a href="#" class="blind">홈</a>
         </div>
-        <div class="loca_sel">회원서비스
+        <div class="loca_sel">눈높이 소개
           <span class="loca_arrow blind">더보기</span>
           <div class="hidden_div">
             <ul class="hidden_loca">
@@ -116,7 +115,7 @@
             </ul>
           </div>
         </div>
-        <div class="loca_sel">눈높이학습관
+        <div class="loca_sel">눈높이 학습서비스
           <span class="loca_arrow blind">더보기</span>
           <div class="hidden_div">
             <ul class="hidden_loca">
@@ -127,92 +126,38 @@
           </div>
         </div>
       </div>
-      <!-- 회원서비스 - 눈높이학습관 -->
+      <!-- 커뮤니티 - 교육정보 -->
       <div class="inner">
-        <h2 class="sub-tit">눈높이학습관</h2>
-        <div  class="learning-wrap">
-          <div class="round_img">
-            <img src="../../resource/img/learningcenter_01.png" alt="큰이미지">
-          </div>
-          <div class="learning_img2">
-            <div class="left_wrap">
-              <img src="../../resource/img/learningcenter_02.jpg" alt="좌측이미지">
-            </div>
-            <div class="right_wrap">
-              <div class="list_tit">
-                <span>쉽고 간편하고 빠르게!</span><strong>PC와 모바일</strong>에서 만나보세요
-                <p class="small_txt">언제 어디서나 간편하게 스마트폰과 PC를 통해 듣기 학습과
-                  동영상 학습을 할 수 있는 온라인 학습관입니다.</p>
+        <h2 class="sub-tit">손바닥 교육 정보 - 눈높이영어SW로 홈스쿨링 하기</h2>
+        
+        <div class="board-view">
+          <div class="br-view-top">
+            <p><span class="date">2020.07.28</span></p>
+            <div class="share_btn">
+              <span class="blind">공유하기</span>
+              <div class="hidden_share">
+                <ul>
+                  <li><span class="insta blind">인스타</span></li>
+                  <li><span class="face blind">페북</span></li>
+                  <li><span class="twi blind">트위터</span></li>
+                </ul>
               </div>
-              <ul class="list_img">
-                <li><img src="../../resource/img/learningcenter_02_1.png" alt="우측이미지"></li>
-                <li><img src="../../resource/img/learningcenter_02_2.png" alt="우측이미지"></li>
-              </ul>
             </div>
-
+          </div>
+          <div class="br-view-cont">
+            <div class="imgbox">
+              <img src="../../resource/img/common/ev_view.jpg" alt="">
+            </div>
+            <div class="textbox">
+              <p>
+                아동 발달 연구가들은 ‘놀이만큼 중요한 것은 없다’라고 이야기 합니다.<br/>놀이가 왜 중요한지, 어떻게 놀아야 잘 노는 것인지 ‘세 아이의 아빠’만의 놀이 철학을 담아 신체놀이와 감성놀이를 총망라한 놀이 레시피를 개발하여 어린이 체험전에 접목시켰습니다. ‘우당탕탕 아빠가 만든 놀이터’는 놀이 방법이 정해져 있는 다른 체험전과는 달리  각자의 아야기와 상상력을 담아 다양한 방법으로 노는 곳 입니다.<br/><br/>놀이의 의도가 한눈에 보이는 것은 목적이 정해져 있기 때문에 아이들에게는 좋은 체험이 아니라고 생각합니다. 스스로 목적을 만들어 놀이를 해야 창의력과 자존감을 키울 수 있습니다. 스스로 목적을 만들어 놀이를 해야 창의력과 자존감을 키울 수 있습니다. 다둥이 아빠의 노하우가 담겨있는 다음의 놀이 레시피를 참고하되 아이들만의 자기만의 스토리를 만들어 뇌 발달 놀이를 즐길 수 있도록 독려해주세요.</p>
+            </div>
+            <div class="backbtn">
+              <a href="javascript:history.back();" class="listback">목록보기</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="fullbg">
-        <div class="inner">
-          <div  class="learning-wrap">
-            <h3 class="member_txt">눈높이학습관 구성</h3>
-            <p class="member_subtxt">교재 문제 풀이 강의, 오디오 듣기 및 샘플 맛보기로 구성되어 바로바로 쉽게 학습 할 수 있습니다. </p>
-            <ul class="composition">
-              <li>
-                <p class="thumb"><img src="../../resource/img/learningcenter_03_1.png" alt="좌측이미지"></p>
-                <p class="tit_txt">제품별 학습방</p>
-                <p class="sub_txt">눈높이 학습자의 각 과목별 제품에 대한 학습 콘텐츠를 제공</p>
-              </li>
-              <li>
-                <p class="thumb"><img src="../../resource/img/learningcenter_03_2.png" alt="우측이미지"></p>
-                <p class="tit_txt">평가방</p>
-                <p class="sub_txt">학습성향검사, 학교시험대비,총괄평가,자격증시험대비 등 다양한 평가콘텐츠를 제공</p>
-              </li>
-            </ul>
-
-        </div>
-
-        </div>
-      </div>
-      <div class="inner">
-        <div  class="learning-wrap">
-          <div class="last_tit">
-            <strong>눈높이학습관,</strong>이렇기 때문에 필요합니다.
-          </div>
-          <ul class="last_con">
-            <li class="fir">
-              <p class="num">01</p>
-              <p class="num_txt">학교 진도에 맞춰 학교시험대비</p>
-              <dl class="num_con">
-                <dt>학교시험대비</dt>
-                <dd>단원별 핵심 개념 및 단원별 평가와 서술형 강화 문제지 제공</dd>
-              </dl>
-            </li>
-            <li class="sec">
-              <p class="num">02</p>
-              <p class="num_txt">중간/기말고사 총괄평가</p>
-              <dl class="num_con">
-                <dt>총괄평가</dt>
-                <dd>중간, 기말고사 대비 초등학생 성취도평가, 중등실전문제 제공</dd>
-              </dl>
-            </li>
-            <li class="thi">
-              <p class="num">03</p>
-              <p class="num_txt">다양한 자격증시험대비 기출문제 제공</p>
-              <dl class="num_con">
-                <dt>자격증시험대비</dt>
-                <dd>MAT 수학능력평가시험 대비문제, EBS토셀 대비 문제, KP한자검정시험 대비문제, TESL어휘능력자격검정 대비문제
-                </dd>
-              </dl>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-
-
-
     </div>
     <div class="footer">
       <div class="foot_top">
