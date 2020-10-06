@@ -149,101 +149,71 @@
           <ul class="member_tabcon">
             <li class="tabcon1 on">
               <div class="thum">
-                <div class="video-play-btn playbtn1">
+                <div class="video-play-btn">
                   <img src="../../resource/img/member_play.png" alt="재생버튼">
                 </div>
                 <img src="../../resource/img/daekyo365_01.jpg" alt="영상1">
               </div>
-              <div id="player1" class="player"></div>
+              <div class="player" data-url="7W4uqhzj54M"></div>
             </li>
             <li class="tabcon2">
               <div class="thum">
-                <div class="video-play-btn playbtn2">
+                <div class="video-play-btn">
                   <img src="../../resource/img/member_play.png" alt="재생버튼">
                 </div>
                 <img src="../../resource/img/daekyo365_01.jpg" alt="영상1">
               </div>
-              <div id="player2" class="player"></div>
+              <div class="player" data-url="Fd7ajYtDuD0"></div>
             </li>
             <li class="tabcon3">
               <div class="thum">
-                <div class="video-play-btn playbtn3">
+                <div class="video-play-btn">
                   <img src="../../resource/img/member_play.png" alt="재생버튼">
                 </div>
                 <img src="../../resource/img/daekyo365_01.jpg" alt="영상1">
               </div>
-              <div id="player3" class="player"></div>
+              <div class="player" data-url="gwPM_EDY2ro"></div>
             </li>
           </ul>
           <script>
-          // 2. This code loads the IFrame Player API code asynchronously.
           var tag = document.createElement('script');
-
           tag.src = "https://www.youtube.com/iframe_api";
           var firstScriptTag = document.getElementsByTagName('script')[0];
           firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-          // 3. This function creates an <iframe> (and YouTube player)
-          //    after the API code downloads.
-          var youTubePlayer1;
-          var youTubePlayer2;
-          var youTubePlayer3;
-          function onYouTubeIframeAPIReady() {
-            youTubePlayer1 = new YT.Player('player1', {
-              height: 'auto',
-              width: 'auto',
-              videoId: '7W4uqhzj54M',
-              // playerVars:{
-              //   controls:0,
-              //   fs:0,
-              // },
-              events: {
-                
-              }
-            });
-            youTubePlayer2 = new YT.Player('player2', {
-              height: 'auto',
-              width: 'auto',
-              videoId: 'Fd7ajYtDuD0',
-              // playerVars:{
-              //   controls:0,
-              //   fs:0,
-              // },
-              events: {
-                
-              }
-            });
-            youTubePlayer3 = new YT.Player('player3', {
-              height: 'auto',
-              width: 'auto',
-              videoId: 'gwPM_EDY2ro',
-              // playerVars:{
-              //   controls:0,
-              //   fs:0,
-              // },
-              events: {
-                
-              }
-            });
+          
+          var idAry = [], urlAry = [], objAry = [];
+          var videoObj = $('.player');
+          $('.player').each(function(i){
+            $(this).attr("id","player"+i);
+            idAry.push("player"+i);
+            urlAry.push($(this).data('url'));
+          });
+          function onYouTubeIframeAPIReady(){
+            for(var i = 0; i < $('.player').length;i++){
+              var player;
+              var playerId = idAry[i];
+              player = new YT.Player(playerId,{
+                height: 'auto',
+                width: 'auto',
+                videoId: urlAry[i],
+                // playerVars:{
+                //   controls:0,
+                //   fs:0,
+                // },
+                events: {
+                  
+                }
+              });
+              objAry.push(player);
+            }
           }
+
           $(document).ready(function(){
-            $('.playbtn1').click(function(){
+            var playBtn = $('.member_tabcon .video-play-btn');
+            playBtn.click(function(){
+              var playBtnIdx = playBtn.index(this);
               $(this).parent().find('img').fadeOut();
-              // $('.thum img').fadeOut();
-                youTubePlayer1.playVideo();//재생
-
-            });
-            $('.playbtn2').click(function(){
-              $(this).parent().find('img').fadeOut();
-              // $('.thum img').fadeOut();
-                youTubePlayer2.playVideo();//재생
-
-            });
-            $('.playbtn3').click(function(){
-              $(this).parent().find('img').fadeOut();
-              // $('.thum img').fadeOut();
-                youTubePlayer3.playVideo();//재생
-
+              objAry[playBtnIdx].playVideo();
             });
 
             var tabTit = $(".member_tab > li"),
@@ -255,20 +225,14 @@
               tabCon.removeClass("on");			
               tabCon.eq(result).addClass("on");		
               $('.thum img').fadeIn();
-              youTubePlayer1.stopVideo();
-              youTubePlayer2.stopVideo();
-              youTubePlayer3.stopVideo();
+              for(var i = 0; i < tabTit.length;i++){
+                objAry[i].stopVideo();
+              }
             });
             
           });
           </script>
-
         </div>
-
-
-
-
-
       </div>
     </div>
     <div class="footer">
