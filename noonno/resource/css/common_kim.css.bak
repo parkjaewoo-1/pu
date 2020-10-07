@@ -343,7 +343,7 @@
 .gnb > ul > li:last-child > ul > li > a {
     color: #b7976b;
 }
-.gnb > ul > li:last-child > ul > li > a:hover {
+.gnb > ul > li:last-child > ul > li > a:hover:after {
     border-bottom: 1px solid #b7976b;
 }
 .gnb > ul:after {
@@ -882,7 +882,7 @@ border-radius:30px;}
 #fullpage .section_in > .tit{margin-top:57px;font-size: 45px; font-weight:700; color:#fff; line-height:65px}
 #fullpage .section_in > .tit + .desc{margin-top:46px}
 #fullpage .section_in > .tit + .s_tit{margin-top:8px;font-size: 20px;
-line-height: 30px; font-weight:700; coloR:#fff;}
+line-height: 30px; font-weight:700; color:#fff;}
 #fullpage .section_in > .tit + .s_tit + .desc{margin-top:50px;}
 #fullpage .section_in > .desc{font-size: 18px;
 line-height: 30px; line-height:30px; color:#fff; font-weight:400;}
