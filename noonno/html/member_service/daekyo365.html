@@ -16,6 +16,9 @@
   <script type="text/javascript" src="../../resource/js/plugin.js"></script>
   <script type="text/javascript" src="../../resource/js/board_event.js" ></script>
   <script type="text/javascript" src="../../resource/js/member.js" ></script>
+
+  <script src="http://www.youtube.com/iframe_api"></script>
+
 </head>
 <body>
   <div class="wrap sub">
@@ -146,26 +149,91 @@
           
           <ul class="member_tabcon">
             <li class="tabcon1 on">
-              <span><img src="../../resource/img/member_play.png" alt="재생버튼"></span>
-              <img src="../../resource/img/daekyo365_01.jpg" alt="영상1">
+              <div class="thum">
+                <div class="video-play-btn">
+                  <img src="../../resource/img/member_play.png" alt="재생버튼">
+                </div>
+                <img src="../../resource/img/daekyo365_01.jpg" alt="영상1">
+              </div>
+              <div class="player" data-url="7W4uqhzj54M"></div>
             </li>
             <li class="tabcon2">
-              <span><img src="../../resource/img/member_play.png" alt="재생버튼"></span>
-              <img src="../../resource/img/daekyo365_01.jpg" alt="영상2">
+              <div class="thum">
+                <div class="video-play-btn">
+                  <img src="../../resource/img/member_play.png" alt="재생버튼">
+                </div>
+                <img src="../../resource/img/daekyo365_01.jpg" alt="영상1">
+              </div>
+              <div class="player" data-url="Fd7ajYtDuD0"></div>
             </li>
             <li class="tabcon3">
-              <span><img src="../../resource/img/member_play.png" alt="재생버튼"></span>
-              <img src="../../resource/img/daekyo365_01.jpg" alt="영상3">
+              <div class="thum">
+                <div class="video-play-btn">
+                  <img src="../../resource/img/member_play.png" alt="재생버튼">
+                </div>
+                <img src="../../resource/img/daekyo365_01.jpg" alt="영상1">
+              </div>
+              <div class="player" data-url="gwPM_EDY2ro"></div>
             </li>
           </ul>
+          <script>
+          var tag = document.createElement('script');
+          tag.src = "https://www.youtube.com/iframe_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          
+          var idAry = [], urlAry = [], objAry = [];
+          var videoObj = $('.player');
+          $('.player').each(function(i){
+            $(this).attr("id","player"+i);
+            idAry.push("player"+i);
+            urlAry.push($(this).data('url'));
+          });
+          function onYouTubeIframeAPIReady(){
+            for(var i = 0; i < $('.player').length;i++){
+              var player;
+              var playerId = idAry[i];
+              player = new YT.Player(playerId,{
+                height: 'auto',
+                width: 'auto',
+                videoId: urlAry[i],
+                // playerVars:{
+                //   controls:0,
+                //   fs:0,
+                // },
+                events: {
+                  
+                }
+              });
+              objAry.push(player);
+            }
+          }
 
+          $(document).ready(function(){
+            var playBtn = $('.member_tabcon .video-play-btn');
+            playBtn.click(function(){
+              var playBtnIdx = playBtn.index(this);
+              $(this).parent().find('img').fadeOut();
+              objAry[playBtnIdx].playVideo();
+            });
 
+            var tabTit = $(".member_tab > li"),
+            tabCon = $(".member_tabcon > li");
+            tabTit.click(function(){       
+              var result = $(this).index();	
+              tabTit.removeClass("on");     
+              $(this).addClass("on");       
+              tabCon.removeClass("on");			
+              tabCon.eq(result).addClass("on");		
+              $('.thum img').fadeIn();
+              for(var i = 0; i < tabTit.length;i++){
+                objAry[i].stopVideo();
+              }
+            });
+            
+          });
+          </script>
         </div>
-
-
-
-
-
       </div>
     </div>
     <div class="footer">
