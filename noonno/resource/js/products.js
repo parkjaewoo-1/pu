@@ -18,4 +18,14 @@ $(function(){
   $('html,body').on('click',function(){
     toolTip.removeClass('on'); 
   })
+  productsListInput();
 });
+
+function productsListInput (){
+  var prdCont = $('.prd');
+  prdCont.each(function(i){
+    prdchkbox = $(this).find('input').attr('id');
+    $(this).find('input').attr('id','prdcont'+i);
+    $(this).find('label').attr('for','prdcont'+i);
+  })
+}

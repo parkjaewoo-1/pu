@@ -69,10 +69,10 @@ h2.sub-tit {
 .board-wrap{
     margin: 28px 0 100px;
 }
-.board-wrap p.total-num{
+p.total-num{
     color:#333;
 }
-.board-wrap p.total-num span{
+p.total-num span{
     color: #ED1C24;
     font-weight: 500;
 }
