@@ -16,10 +16,10 @@ function gnb(){
 
     $('.gnb > ul > li > a').mouseenter(function(){
       $('.gnb_bottom').addClass('on');
-      TweenMax.to( '.depth_02 > li > a', 0.6, {autoAlpha: 1, display:'inline-block', ease:power4, });
+      TweenMax.to( '.depth_02 > li > a', 0.6, {autoAlpha: 1, display:'block', ease:power4, });
 	  //$('.depth_02').slideDown('fast');
 
-
+      
 
 
 
@@ -32,7 +32,7 @@ function gnb(){
       //$('.depth_02').slideUp('fast');
       //$('.depth_02 > li > a').fadeOut('fast');
 
-
+    
 
     });
 
@@ -81,26 +81,20 @@ function shareBtn(){
     });
 }
 function compareBox(){
-    $('.prd input').on('change', function(){
-
-        TweenMax.to('.compare_box', 0.6, {bottom:'0', ease:power4});
-        $('.compare_box').addClass('on');
-        $('.compare_box .tit').addClass('on');
-    });
-     $('.compare_box > .tit').click(function(){
+    $('.compare_box > .tit').click(function(){
         var thP = $(this).parent('.compare_box');
         if( thP.hasClass('on') == true){
             $(this).removeClass('on');
             thP.removeClass('on');
             TweenMax.to(thP, 0.6, {bottom: '-350px', ease:power4});
             $('.tab_cont').removeClass('on')
+        }else{
+            $(this).addClass('on');
+            thP.addClass('on');
+            TweenMax.to(thP, 0.6, {bottom:'0', ease:power4});
+            $('.tab_cont').addClass('on');
         }
-
-     });
-     $('.compare_btn').click(function(){
-
-
-     });
+    });
 
 
 }
@@ -115,35 +109,4 @@ function aboutTab(){
         $('.edu_service .list_content .tab_cont').eq(tIdx).addClass('on');
 
     });
-}
-
-
-//레이어팝업
-
-function layerPopOpen(obj){// 레이어팝업 열기, obj : 해당팝업 id
-
-
-    var thisPop = $('#'+obj).find('.layer_pop');
-    var winW = $(window).width();
-    var winH = $(window).height();
-
-    //dimOn();
-    if($('#'+obj).length >= 1){
-        $('#'+obj).addClass('open');
-        $('html, body').css('overflow','hidden');
-
-
-    }
-
-
-}
-
-function layerPopClose(obj){// 레이어팝업 닫기, obj : 해당팝업 id
-    console.log('close');
-    $('#'+obj).removeClass('open');
-    $('html, body').css('overflow','auto');
-    $('body').removeAttr('style');
-
-
-
 }

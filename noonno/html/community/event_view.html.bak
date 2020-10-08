@@ -11,10 +11,8 @@
   <link href="../../resource/css/common_kim.css" rel="stylesheet" type="text/css"/>
   <script type="text/javascript" src="../../resource/js/jquery-1.8.2.min.js"></script>
   <script type="text/javascript" src="../../resource/js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="../../resource/js/plugin.js"></script>
   <script type="text/javascript" src="../../resource/js/design_common.js"></script>
   <script type="text/javascript" src="../../resource/js/board_event.js" ></script>
-
 
 </head>
 <body>
@@ -128,153 +126,45 @@
           </div>
         </div>
       </div>
-      <!-- 커뮤니티 - 뉴스,공지 -->
+      <!-- 커뮤니티 - 이벤트 -->
       <div class="inner">
-        <h2 class="sub-tit">눈높이소식</h2>
-        <div class="board-search">
-          <form action="" name="">
-            <input name="" value="" autocomplete="off" placeholder="검색어를 입력해주세요">
-            <button class="btn-search">검색</button>
-          </form>
-        </div>
-        <div class="board-wrap">
-          <p class="total-num">전체<span>32</span>건</p>
-          <ul class="board-box board-gallery">
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-7.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">세상에서 가장 큰 학교가 찐쌤을 찾습니다!</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="./news_notice_view.html" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-6.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">2019 더불어배우다 연차보고서 e-book 발간소식 안내</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-5.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">트라움 감성 체험전 '우당탕탕 아빠가 만든 놀이터'</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-4.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">눈높이예스클래스, 써밋 수학 coming   soon!</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-3.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">아빠도 한 눈높이국어</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-2.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">'까칠한 아이' 오디오북 전자책 출시!</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-1.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">언제나 우리의 선택은 눈높이수학</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">대교 MUN캠프와 함께하는 영어 말하기 대회</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="paging paging-type-a">
-          <ul class="paging-box">
-            <li>
-              <a href="" class="first">처음으로</a>
-            </li>
-            <li>
-              <a href="" class="prev">이전</a>
-            </li>
-            <li>
-              <a href="" class="number">1</a>
-            </li>
-            <li>
-              <a href="" class="number">2</a>
-            </li>
-            <li>
-              <a href="" class="number active">3</a>
-            </li>
-            <li>
-              <a href="" class="number">4</a>
-            </li>
-            <li>
-              <a href="" class="number">5</a>
-            </li>
-            <li>
-              <a href="" class="number">6</a>
-            </li>
-            <li>
-              <a href="" class="number">7</a>
-            </li>
-            <li>
-              <a href="" class="number">8</a>
-            </li>
-            <li>
-              <a href="" class="number">9</a>
-            </li>
-            <li>
-              <a href="" class="number">10</a>
-            </li>
-            <li>
-              <a href="" class="next">다음</a>
-            </li>
-            <li>
-              <a href="" class="last">마지막으로</a>
-            </li>
-          </ul>
+        <h2 class="sub-tit">눈높이청소년 문학상</h2>
+        
+        <div class="board-view">
+          <div class="br-view-top">
+            <p>
+              <span class="br-cate view-top-txt">이벤트</span>
+              <span class="date">2020.07.28 09:00 ~ 2020.07.29 18:00</span>
+              <span class="view-top-txt02">당첨자발표</span>
+              <span class="dday_date">2020.07.30</span>
+              <span class="end-txt">종료</span>
+              <a href="" class="winner-link">당첨자발표</a>
+            </p>
+            <div class="share_btn">
+              <span class="blind">공유하기</span>
+              <div class="hidden_share">
+                <ul>
+                  <li><span class="insta blind">인스타</span></li>
+                  <li><span class="face blind">페북</span></li>
+                  <li><span class="twi blind">트위터</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="br-view-cont">
+            <div class="imgbox">
+              <img src="../../resource/img/common/ev_view.jpg" alt="">
+            </div>
+            <div class="textbox">
+              <p>
+                아동 발달 연구가들은 ‘놀이만큼 중요한 것은 없다’라고 이야기 합니다.<br/>
+  놀이가 왜 중요한지, 어떻게 놀아야 잘 노는 것인지 ‘세 아이의 아빠’만의 놀이 철학을 담아 신체놀이와 감성놀이를 총망라한 놀이 레시피를 개발하여 어린이 체험전에 접목시켰습니다. ‘우당탕탕 아빠가 만든 놀이터’는 놀이 방법이 정해져 있는 다른 체험전과는 달리  각자의 아야기와 상상력을 담아 다양한 방법으로 노는 곳 입니다.<br/><br/>  
+  놀이의 의도가 한눈에 보이는 것은 목적이 정해져 있기 때문에 아이들에게는 좋은 체험이 아니라고 생각합니다. 스스로 목적을 만들어 놀이를 해야 창의력과 자존감을 키울 수 있습니다. 스스로 목적을 만들어 놀이를 해야 창의력과 자존감을 키울 수 있습니다. 다둥이 아빠의 노하우가 담겨있는 다음의 놀이 레시피를 참고하되 아이들만의 자기만의 스토리를 만들어 뇌 발달 놀이를 즐길 수 있도록 독려해주세요.</p>
+            </div>
+            <div class="backbtn">
+              <a href="javascript:history.back();" class="listback">목록보기</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

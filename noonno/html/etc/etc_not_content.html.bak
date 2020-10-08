@@ -9,11 +9,12 @@
   <link href="../../resource/css/reset.css" rel="stylesheet" type="text/css"/>
   <link href="../../resource/css/common.css" rel="stylesheet" type="text/css"/>
   <link href="../../resource/css/common_kim.css" rel="stylesheet" type="text/css"/>
+  <link href="../../resource/css/etc01.css" rel="stylesheet" type="text/css"/>
   <script type="text/javascript" src="../../resource/js/jquery-1.8.2.min.js"></script>
   <script type="text/javascript" src="../../resource/js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="../../resource/js/plugin.js"></script>
   <script type="text/javascript" src="../../resource/js/design_common.js"></script>
   <script type="text/javascript" src="../../resource/js/board_event.js" ></script>
+
 
 
 </head>
@@ -101,7 +102,6 @@
       </div>
 
     </div>
-
     <div class="content">
       <div class="location">
         <div class="loca_home">
@@ -128,153 +128,21 @@
           </div>
         </div>
       </div>
-      <!-- 커뮤니티 - 뉴스,공지 -->
+      <!-- ETC - 통합검색 false -->
       <div class="inner">
-        <h2 class="sub-tit">눈높이소식</h2>
+        <h2 class="sub-tit">통합검색</h2>
         <div class="board-search">
           <form action="" name="">
             <input name="" value="" autocomplete="off" placeholder="검색어를 입력해주세요">
             <button class="btn-search">검색</button>
           </form>
         </div>
-        <div class="board-wrap">
-          <p class="total-num">전체<span>32</span>건</p>
-          <ul class="board-box board-gallery">
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-7.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">세상에서 가장 큰 학교가 찐쌤을 찾습니다!</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="./news_notice_view.html" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-6.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">2019 더불어배우다 연차보고서 e-book 발간소식 안내</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-5.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">트라움 감성 체험전 '우당탕탕 아빠가 만든 놀이터'</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-4.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">눈높이예스클래스, 써밋 수학 coming   soon!</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-3.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">아빠도 한 눈높이국어</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-2.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">'까칠한 아이' 오디오북 전자책 출시!</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91-1.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">언제나 우리의 선택은 눈높이수학</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="" class="board hov-event">
-                <div class="thumb">
-                  <img src="../../resource/img/Rectangle 91.png" alt="">
-                </div>
-                <div class="info">
-                  <h3 class="board-tit">대교 MUN캠프와 함께하는 영어 말하기 대회</h3>
-                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="paging paging-type-a">
-          <ul class="paging-box">
-            <li>
-              <a href="" class="first">처음으로</a>
-            </li>
-            <li>
-              <a href="" class="prev">이전</a>
-            </li>
-            <li>
-              <a href="" class="number">1</a>
-            </li>
-            <li>
-              <a href="" class="number">2</a>
-            </li>
-            <li>
-              <a href="" class="number active">3</a>
-            </li>
-            <li>
-              <a href="" class="number">4</a>
-            </li>
-            <li>
-              <a href="" class="number">5</a>
-            </li>
-            <li>
-              <a href="" class="number">6</a>
-            </li>
-            <li>
-              <a href="" class="number">7</a>
-            </li>
-            <li>
-              <a href="" class="number">8</a>
-            </li>
-            <li>
-              <a href="" class="number">9</a>
-            </li>
-            <li>
-              <a href="" class="number">10</a>
-            </li>
-            <li>
-              <a href="" class="next">다음</a>
-            </li>
-            <li>
-              <a href="" class="last">마지막으로</a>
-            </li>
-          </ul>
+        <div class="etc-not-search">
+          <div class="not-search-al">
+            <img src="../../resource/img/etc_search_not.png" alt="">
+            <h3>검색결과가 없습니다</h3>
+            <p>다른 검색어로 시도해보세요</p>
+          </div>
         </div>
       </div>
     </div>

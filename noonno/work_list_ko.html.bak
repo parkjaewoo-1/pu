@@ -145,7 +145,7 @@
 
     </tbody>
   </table>
-	<h2>메인</h2>
+<h2>메인</h2>
   <table>
     <colgroup>
       <col width="10%">
@@ -163,10 +163,66 @@
       <td></td>
       <td></td>
       <td rowspan="0">main</td>
-      <td><a href="html/main/main.html" target="_blank">news_notice_list</a></td>
+      <td><a href="html/main/main.html" target="_blank">main</a></td>
       <td class=""></td>
     </tr>
-    
+
+  </table>
+
+<h2>눈높이 올림피아드</h2>
+  <table>
+    <colgroup>
+      <col width="10%">
+      <col width="15%">
+      <col width="15%">
+      <col width="20%">
+      <col width="10%">
+      <col width="10%">
+      <col>
+    </colgroup>
+    <tbody>
+    <tr class="">
+      <td>눈높이올림피아드</td>
+      <td rowspan="0">눈높이올림피아드</td>
+      <td></td>
+      <td></td>
+      <td rowspan="0">user_service</td>
+      <td><a href="html/user_service/olympiad.html" target="_blank">olympiad</a></td>
+      <td class=""></td>
+    </tr>
+
+  </table>
+    <h2>눈높이 소개</h2>
+  <table>
+    <colgroup>
+      <col width="10%">
+      <col width="15%">
+      <col width="15%">
+      <col width="20%">
+      <col width="10%">
+      <col width="10%">
+      <col>
+    </colgroup>
+    <tbody>
+    <tr class="ok">
+      <td rowspan="2">눈높이 소개</td>
+      <td rowspan="">브랜드 스토리</td>
+      <td></td>
+      <td></td>
+      <td rowspan="2">about</td>
+      <td><a href="html/about/brand_story.html" target="_blank">brand_story</a></td>
+      <td class=""></td>
+    </tr>
+    <tr class="ok">
+
+      <td rowspan="">눈높이학습서비스</td>
+      <td></td>
+      <td></td>
+
+      <td><a href="html/about/edu_service.html" target="_blank">edu_service</a></td>
+      <td class=""></td>
+    </tr>
+
   </table>
 
 
@@ -232,6 +288,78 @@
     </tr>
   </table>
 
+  <h2>회원서비스</h2>
+  <table>
+    <colgroup>
+      <col width="10%">
+      <col width="15%">
+      <col width="15%">
+      <col width="20%">
+      <col width="10%">
+      <col width="10%">
+      <col>
+    </colgroup>
+    <tbody>
+    <tr class="ok">
+      <td rowspan="3">회원서비스</td>
+      <td rowspan="">눈높이 365</td>
+      <td></td>
+      <td></td>
+      <td rowspan="3">member_service</td>
+      <td><a href="html/member_service/daekyo365.html" target="_blank">daekyo365</a></td>
+      <td class=""></td>
+    </tr>
+    <tr class="ok">
+
+      <td rowspan="">눈높이학습관</td>
+      <td></td>
+      <td></td>
+
+      <td><a href="html/member_service/learningcenter.html" target="_blank">learningcenter</a></td>
+      <td class=""></td>
+    </tr>
+    <tr class="ok">
+
+      <td rowspan="">눈높이성장판</td>
+      <td></td>
+      <td></td>
+
+      <td><a href="html/member_service/growth_plate.html" target="_blank">growth_plate</a></td>
+      <td class=""></td>
+    </tr>
+  </table>
+
+  <h2>ETC</h2>
+  <table>
+    <colgroup>
+      <col width="10%">
+      <col width="15%">
+      <col width="15%">
+      <col width="20%">
+      <col width="10%">
+      <col width="10%">
+      <col>
+    </colgroup>
+    <tbody>
+    <tr class="ok">
+      <td>통합검색</td>
+      <td rowspan="2">검색결과</td>
+      <td>검색결과</td>
+      <td></td>
+      <td rowspan="11">etc</td>
+      <td><a href="html/etc/etc.html" target="_blank">etc.html</a></td>
+      <td class=""></td>
+    </tr>
+    <tr class="ok">
+
+      <td>결과없음</td>
+      <td></td>
+      <td><a href="html/etc/etc_not_content.html" target="_blank">etc_not_content.html</a></td>
+      <td class=""></td>
+    </tr>
+
+
+  </table>
 
 
 
