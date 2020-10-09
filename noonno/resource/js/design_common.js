@@ -146,28 +146,28 @@ function compareBox(){
     });
     $(document).on('click','.compare_box .desc .blind',function(){
         ChkNum -= 1;
-        var _delClTit = $(this).parent().siblings('.desc').text();
-        delIdxofNum = _tit.indexOf(_delClTit);
+        // var _delClTit = $(this).parent().siblings('.desc').text();
+        // delIdxofNum = _tit.indexOf(_delClTit);
 
-        console.log(_delClTit);
-        console.log(ChkNum);
+        // console.log(_delClTit);
+        // console.log(delIdxofNum);
 
-        _tit.splice($.inArray(delIdxofNum, _tit),1);
-        _img.splice($.inArray(delIdxofNum, _img),1);
+        // _tit.splice($.inArray(delIdxofNum, _tit),1);
+        // _img.splice($.inArray(delIdxofNum, _img),1);
 
-        $(".prd input:checkbox[class='prdchkB']:checked").eq(delIdxofNum).prop('checked',false);
+        // $(".prd input:checkbox[class='prdchkB']:checked").eq(delIdxofNum).prop('checked',false);
 
-        $(this).parent('.del').parent('.on').detach();
+        // $(this).parent('.del').parent('.on').detach();
 
-        $('.compare_box .list').append(compListInnerHTML);
-        compList = $('.compare_box .list > div');
-        compImgSort = $('.compare_box .list > div .img img');
-        compTitSort = $('.compare_box .list > div .desc');
-        if(ChkNum <= 0){
-            compareBoxTit.removeClass('on');
-            compareBox.removeClass('on');
-            TweenMax.to(compareBox, 0.6, {bottom: '-350px', ease:power4});
-        }
+        // $('.compare_box .list').append(compListInnerHTML);
+        // compList = $('.compare_box .list > div');
+        // compImgSort = $('.compare_box .list > div .img img');
+        // compTitSort = $('.compare_box .list > div .desc');
+        // if(ChkNum <= 0){
+        //     compareBoxTit.removeClass('on');
+        //     compareBox.removeClass('on');
+        //     TweenMax.to(compareBox, 0.6, {bottom: '-350px', ease:power4});
+        // }
     });
     
 
