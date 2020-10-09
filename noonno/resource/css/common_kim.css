@@ -161,6 +161,7 @@
     padding: 20px 30px;
     border-radius: 25px;
     background: #666;
+    z-index:30;
 }
 .wrap .footer .foot_top .brand_site .brand_open > .tit {
     font-size: 16px;
@@ -1818,3 +1819,34 @@ line-height: 25px;}
     color: #ED1C24;
     font-weight:500;
 }
+#section4 .section_in{width:1032px; margin:0 auto;}
+#section4 .arco_list{margin-top:25px;}
+#section4 .arco_list ul li + li{margin-top:5px;}
+#section4 .arco_list ul li{background:#fff; border-radius: 10px; padding:15px 26px;}
+
+#section4 .arco_list ul li .tit{display:flex; align-items:center; font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+color:#333;
+cursor:pointer;
+background:url(../img/sub/arco_btn.png);
+background-repeat:no-repeat;
+background-position:99% 16px;
+}
+#section4 .arco_list ul li.on .tit{
+    background:url(../img/sub/arco_btn_on.png);
+background-repeat:no-repeat;
+background-position:99% 16px;
+ }
+#section4 .arco_list ul li .tit .left{font-size:20px; font-weight:500; color:#ED1C24;}
+#section4 .arco_list ul li .tit .left + .right{margin-left:15px;}
+#section4 .arco_list ul li .hidden{ display:none;}
+#section4 .arco_list ul li .hidden .hidden_flex{display:flex;}
+#section4 .arco_list ul li .hidden .left{font-size:20px; font-weight:500; color:#B7976B;}
+#section4 .arco_list ul li .hidden .right{font-weight: 400; color:#333; text-align:left; margin-left:15px;
+font-size: 16px;
+line-height: 25px;}
+#section4 .arco_list ul li .tit + .hidden{margin-top:15px; padding-top:18px; border-top:1px solid #ddd;}
+
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{width:10px!important;; height:10px !important;}

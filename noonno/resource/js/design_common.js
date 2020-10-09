@@ -9,6 +9,7 @@ $(document).ready(function(){
     shareBtn();
     compareBox();
     aboutTab();
+    arco();
 })
 
 
@@ -146,4 +147,15 @@ function layerPopClose(obj){// 레이어팝업 닫기, obj : 해당팝업 id
 
 
 
+}
+function arco(){
+    $('.arco_list ul li .tit').click(function(){
+        if( $(this).parent('li').hasClass('on') == true    ){
+            $(this).next('.hidden').slideUp();
+            $(this).parent('li').removeClass('on');
+        }else{
+            $(this).next('.hidden').slideDown();
+            $(this).parent('li').addClass('on');
+        }
+    });
 }
