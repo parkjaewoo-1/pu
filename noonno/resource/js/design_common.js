@@ -1,4 +1,3 @@
-
 var power4 = 'power4.out';
 var slow =  'Expo.easeOut'
 $(document).ready(function(){
@@ -83,21 +82,21 @@ function shareBtn(){
 function compareBox(){
     var inputEl = $(".prd input:checkbox[class='prdchkB']"),
     ChkNum = 0, _img = [], _tit = [],
+    compListInnerHTML = "<div class='copy'>"+$('.compare_box .list > div').html()+"</div>",
     compList = $('.compare_box .list > div'),
     compImgSort = $('.compare_box .list > div .img img'),
     compTitSort = $('.compare_box .list > div .desc'),
     compareBox = $('.compare_box'),
     compareBoxTit = $('.compare_box > .tit'),
-    comparRemove = $('.compare_box > .desc > .list > div.on .del');
-
+    comparRemove;
+    
     inputEl.on('change', function(){
         if($(this).is(':checked') == true){ // 체크
-
             ChkNum += 1;
             _img.push($(this).prev('.thumb').find('img').attr('src'));
             _tit.push($(this).next('label').find('.title').text());
 
-            console.log(ChkNum);
+            // console.log(ChkNum);
 
             if(ChkNum > 0){
                 compareBoxTit.addClass('on');
@@ -117,9 +116,8 @@ function compareBox(){
                 compTitSort.eq(i).text(_tit[i]);
                 compList.eq(i).addClass('on');
             }
-
+            
         }else if($(this).is(':checked') == false){ // 체크해제
-
             ChkNum -= 1;
             var comTit = $(this).next('label').find('.title').text(),
             comImg = $(this).prev('.thumb').find('img').attr('src'),
@@ -127,9 +125,13 @@ function compareBox(){
 
             _tit.splice($.inArray(comTit, _tit),1);
             _img.splice($.inArray(comImg, _img),1);
-
-            console.log(ChkNum);
-
+            
+            // console.log(idxofNum);
+            compList.eq(idxofNum).detach();
+            $('.compare_box .list').append(compListInnerHTML);
+            compList = $('.compare_box .list > div');
+            compImgSort = $('.compare_box .list > div .img img');
+            compTitSort = $('.compare_box .list > div .desc');
             if(ChkNum > 0){
                 compareBoxTit.addClass('on');
                 compareBox.addClass('on');
@@ -140,22 +142,35 @@ function compareBox(){
                 compareBox.removeClass('on');
                 TweenMax.to(compareBox, 0.6, {bottom: '-350px', ease:power4});
             }
-
-            for(var i = 0; i < ChkNum; i++){
-                compImgSort.eq(i).attr('src',_img[i]);
-                compTitSort.eq(i).text(_tit[i]);
-                compList.eq(i).addClass('on');
-            }
-
-
         }
-        
-
-        // TweenMax.to('.compare_box', 0.6, {bottom:'0', ease:power4});
-        
-        // $('.compare_box').addClass('on');
-        // $('.compare_box .tit').addClass('on');
     });
+    $(document).on('click','.compare_box .desc .blind',function(){
+        ChkNum -= 1;
+        var _delClTit = $(this).parent().siblings('.desc').text();
+        delIdxofNum = _tit.indexOf(_delClTit);
+
+        console.log(_delClTit);
+        console.log(ChkNum);
+
+        _tit.splice($.inArray(delIdxofNum, _tit),1);
+        _img.splice($.inArray(delIdxofNum, _img),1);
+
+        $(".prd input:checkbox[class='prdchkB']:checked").eq(delIdxofNum).prop('checked',false);
+
+        $(this).parent('.del').parent('.on').detach();
+
+        $('.compare_box .list').append(compListInnerHTML);
+        compList = $('.compare_box .list > div');
+        compImgSort = $('.compare_box .list > div .img img');
+        compTitSort = $('.compare_box .list > div .desc');
+        if(ChkNum <= 0){
+            compareBoxTit.removeClass('on');
+            compareBox.removeClass('on');
+            TweenMax.to(compareBox, 0.6, {bottom: '-350px', ease:power4});
+        }
+    });
+    
+
      $('.compare_box > .tit').click(function(){
         var thP = $(this).parent('.compare_box');
         if( thP.hasClass('on') == true){
@@ -171,9 +186,6 @@ function compareBox(){
         }
 
      });
-     
-
-
 }
 function aboutTab(){
 

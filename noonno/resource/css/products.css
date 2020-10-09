@@ -132,8 +132,26 @@
   font-weight: 500;
 }
 .prd-search-reset button div {display: flex;align-items: center;text-align: center;}
-
-
+.compare_box > .desc > .list > div .desc{
+  position: relative;
+  min-height:23px;
+}
+.compare_box > .desc > .list > div .desc:after{
+  position: absolute;
+  top: 0;
+  left:0;
+  content: '제품을 선택해주세요';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #aaa;
+  width:100%;
+}
+.compare_box > .desc > .list > div.on .desc:after{
+  display: none;
+}
 /* list */
 .prd-list-wrap {
   margin: 73px 0 120px;
