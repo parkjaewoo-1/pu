@@ -95,7 +95,6 @@ function compareBox(){
             ChkNum += 1;
             _img.push($(this).prev('.thumb').find('img').attr('src'));
             _tit.push($(this).next('label').find('.title').text());
-            // console.log(ChkNum);
             checked.push($(this));
             if(ChkNum > 0){
                 compareBoxTit.addClass('on');
@@ -115,12 +114,7 @@ function compareBox(){
                 compImgSort.eq(i).attr('src',_img[i]);
                 compTitSort.eq(i).text(_tit[i]);
                 compList.eq(i).addClass('on');
-            }
-
-            // console.log(checked);
-            // console.log(_tit);
-            // console.log(_img);
-            
+            }            
         }else if($(this).is(':checked') == false){ // 체크해제
             ChkNum -= 1;
             var comTit = $(this).next('label').find('.title').text(),
@@ -146,30 +140,21 @@ function compareBox(){
                 compareBox.removeClass('on');
                 TweenMax.to(compareBox, 0.6, {bottom: '-350px', ease:power4});
             }
-            // console.log("인풋체크해제");
-            // console.log(_tit);
-            // console.log(_img);
-            // console.log(checked);
         }
     });
     $(document).on('click','.compare_box .desc .blind',function(){
         ChkNum -= 1;
         var _delClTit = $(this).parent().siblings('.desc').text();
         var blindIdx = _tit.indexOf(_delClTit);
-
-        // console.log(blindIdx);
         compList.eq(blindIdx).detach();
         _tit.splice($.inArray(blindIdx, _tit),1);
         _img.splice($.inArray(blindIdx, _img),1);
         $('.compare_box .list').append(compListInnerHTML);
         checked[blindIdx].prop('checked',false);
         checked.splice(blindIdx,1);
-        // $(".prd input:checkbox[class='prdchkB']:checked").eq(blindIdx).prop('checked',false);
         compList = $('.compare_box .list > div');
         compImgSort = $('.compare_box .list > div .img img');
         compTitSort = $('.compare_box .list > div .desc');
-
-
     });
     
 
