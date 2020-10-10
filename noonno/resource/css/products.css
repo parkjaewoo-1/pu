@@ -17,12 +17,15 @@
 .prd-search-wrap .se-group .se-chkbox-wrap .check_box span {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
-  vertical-align: text-top;
+  vertical-align: middle;
   color:#666;
+  line-height:20px;
 }
 .prd-search-wrap .se-group .se-chkbox-wrap .check_box input[type='checkbox'] + label:after,
 .prd-search-wrap .se-group .se-chkbox-wrap .check_box input[type='checkbox'] + label:before{
-  top:1px;
+  top: 1px;
+  vertical-align: middle;
+  line-height: 20px;
 }
 
 .prd-search-wrap .search-group-tit {
@@ -53,15 +56,16 @@
   margin-left:44px;
 }
 .prd-search-wrap .se-group .se-chkbox-wrap .check_box .tooltip {
+  top:1px;
   display: inline-block;
   margin-left:5px;
   position:relative;
 }
 .prd-search-wrap .se-group .se-chkbox-wrap .check_box .prd-tooltip {
-  vertical-align: middle;
+  vertical-align: sub;
   cursor:pointer;
 }
-.prd-search-wrap .se-group .se-chkbox-wrap .check_box .tooltip-info {
+.tooltip-info {
   position: absolute;
   width: 225px;
   left: 0;
@@ -78,20 +82,20 @@
   transition: all 0.4s ease-in-out;
   visibility:hidden;
 }
-.prd-search-wrap .se-group .se-chkbox-wrap .check_box .tooltip-info.on{
+.tooltip-info.on{
   opacity: 1;
   visibility:visible;
 }
-.prd-search-wrap .se-group .se-chkbox-wrap .check_box .tooltip-info > div {
+.tooltip-info > div {
   padding: 27px 18px;
 }
-.prd-search-wrap .se-group .se-chkbox-wrap .check_box .tooltip-info a {
+.tooltip-info a {
   font-size: 14px;
   line-height: 22px;
   color: #666;
   display:block;
 }
-.prd-search-wrap .se-group .se-chkbox-wrap .check_box .tooltip-info a img {
+.tooltip-info a img {
   margin-left: 5px;
 }
 .tooltip-info .tooltip-tit {
@@ -113,29 +117,44 @@
 }
 .prd-search-reset {
   text-align: center;
+  margin-top: 37px;
 }
-
-.prd-search-reset button span {
-  font-size: 14px;
-  color: #666;
-  margin-left: 5px;
-  font-weight: 500;
-}
-.prd-search-reset button.reset {
-  margin-right: 7px;
-}
-.prd-search-reset button div {display: flex;align-items: center;text-align: center;}
-
-.prd-search-reset {
-  margin-top: 32px;
-}
-
 .prd-search-reset button {
   padding: 10px 24px;
   border: 1px solid #AAAAAA;
   box-sizing: border-box;
   border-radius: 5px;
   display: inline-block;
+}
+.prd-search-reset button.reset {
+  margin-right: 7px;
+}
+.prd-search-reset button span {
+  font-size: 14px;
+  color: #666;
+  margin-left: 5px;
+  font-weight: 500;
+}
+.prd-search-reset button div {display: flex;align-items: center;text-align: center;line-height:17px;}
+.compare_box > .desc > .list > div .desc{
+  position: relative;
+  min-height:23px;
+}
+.compare_box > .desc > .list > div .desc:after{
+  position: absolute;
+  top: 0;
+  left:0;
+  content: '제품을 선택해주세요';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #aaa;
+  width:100%;
+}
+.compare_box > .desc > .list > div.on .desc:after{
+  display: none;
 }
 /* list */
 .prd-list-wrap {
@@ -270,4 +289,151 @@
   text-align: center;
   margin: 0 auto;
   display: block;
+}
+
+/* detail */
+.product-top {
+  padding-top: 20px;
+  display: flex;
+}
+.product-top .prd-top-left {
+  max-width: 580px;
+  margin-right: 120px;
+}
+.product-top .prd-top-right {
+  width: 50%;
+  padding-top:50px;
+}
+.product-top .prd-top-right .prd-title {
+  margin-top: 30px;
+  border-bottom: 2px solid #3B302F;
+  padding-bottom: 30px;
+}
+.product-top .prd-title .subinfo {
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: -2px;
+  margin-top: 21px;
+  line-height: 30px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.product-top .prd-title .hashtag {
+  color: #ED1C24;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: -2px;
+  margin-top: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.product-top .prd-title .hashtag span {
+  margin-right: 10px;
+}
+.product-top .prd-option {
+  padding-top: 17px;
+}
+.product-top .prd-option ul {
+  display: flex;
+}
+.product-top .prd-option ul > li{
+  line-height:45px;
+}
+.product-top .prd-option .option-tit {
+  font-weight: 500;
+  font-size: 16px;
+  color: #666;
+  letter-spacing: -2px;
+  margin-right: 23px;
+}
+.product-top .prd-option .option-txt {
+  width: 100%;
+}
+.product-top .prd-option .option-txt > div {
+  display: flex;
+  align-items: center;
+  float: left;
+  margin-right: 20px;
+}
+.product-top .prd-option .option-txt > div p{margin-right:3px}
+.product-top .prd-option .option-txt > div > .tooltip {
+  line-height: 45px;
+}
+.product-top .prd-option .option-txt > div > .tooltip > img{
+  vertical-align: sub;
+}
+.product-top .prd-option .option-txt > div > .tooltip .tooltip-info{
+  top:40px;
+}
+.product-top .prd-top-link{
+  margin-top:40px;
+}
+.product-top .prd-top-link:after{
+  content:'';
+  display: block;
+  clear:both;
+}
+.product-top .prd-top-link .prd-more-btn {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 60px;
+  display: inline-block;
+  width: 280px;
+  height: 60px;
+  transition: all ease .2s;
+  text-align: center;
+  color: #ed1c24;
+  border-radius: 30px;
+  border: 2px solid;
+  box-sizing: border-box;
+}
+.product-top .prd-more-btn:hover {
+  transition: all ease .2s;
+  color: #3b302f;
+}
+.product-top .prdview_btn{
+  float:right;
+}
+.prd-thumb-slider .pagination{
+  position: relative;
+  line-height: 50px;
+  height:50px;
+  text-align:center;
+  margin-top:20px;
+}
+.prd-thumb-slider .pagination > div{
+  position: initial;
+  display:inline-block;
+}
+.prd-thumb-slider .pagination .swiper-pagination{
+  margin:0 16px;
+  line-height: 50px;
+}
+.prd-thumb-slider .pagination .swiper-button-next{
+  background-image: url(../img/products_detail/prd_detail_next.png);
+}
+.prd-thumb-slider .pagination .swiper-button-prev{
+  background-image: url(../img/products_detail/prd_detail_prev.png);
+}
+.prd-thumb-slider .pagination .swiper-button-next,
+.prd-thumb-slider .pagination .swiper-button-prev{
+  width:50px;
+  height:50px;
+  background-size:50px;
+  outline: none;
+  vertical-align: bottom;
+  display: none;
+}
+.prd-thumb-slider .pagination .swiper-pagination-bullet{
+  width:12px;
+  height:12px;
+  background:none;
+  border: 2px solid #aaa;
+  box-sizing: border-box;
+  outline: none;
+  margin:0 11px;
+  opacity:1;
+}
+.prd-thumb-slider .pagination .swiper-pagination-bullet-active{
+  border: 2px solid #ed1c24;
+  transition: all ease .2s;
 }

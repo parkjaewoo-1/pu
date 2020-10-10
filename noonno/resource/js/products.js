@@ -2,9 +2,9 @@ $(function(){
   var toolTipBtn = $('.prd-tooltip'),
   toolTip = $('.tooltip-info');
   toolTip.each(function(i){
-    var toolTipPos = toolTip.eq(i).offset().left,
-    toolTipW = (toolTip.eq(i).width() / 2) + 3;
+    var toolTipW = toolTip.eq(1).width() / 2;
     toolTip.eq(i).css('left','-' + toolTipW + 'px');
+    // console.log(toolTipW)
   });
   toolTipBtn.click(function(e){
     e.stopPropagation();
@@ -19,6 +19,26 @@ $(function(){
     toolTip.removeClass('on'); 
   })
   productsListInput();
+
+  if($('.prd-thumb-slider li').length > 1){
+    $('.pagination .swiper-button-next').css('display','inline-block');
+    $('.pagination .swiper-button-prev').css('display','inline-block');
+    var Detailslider = new Swiper('.thumb-slider',{
+      pagination: {
+        el: '.pagination .swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.pagination .swiper-button-next',
+        prevEl: '.pagination .swiper-button-prev',
+      },
+      autoplay: {
+        delay: 5000,
+      },
+      loop:true,
+    });
+  }
+
 });
 
 function productsListInput (){
