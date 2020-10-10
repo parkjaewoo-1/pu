@@ -634,7 +634,7 @@ input[type='checkbox']:disabled + label > span {
     background: url(../img/main/kvImg02.png), #ffe9e7;
 }
 .main_content .slide .slide03 {
-    background: url(../img/main/kvImg03.png), #ffe9e7;
+    background: url(../img/main/kvImg02.png), #ffe9e7;
 }
 .main_content .slide .swiper-slide {
     height: 537px;

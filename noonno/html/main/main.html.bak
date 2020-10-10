@@ -20,7 +20,6 @@
 
 
 
-
 </head>
 <body>
   <div class="wrap main">
@@ -203,7 +202,7 @@
                         <input type="checkbox" id="prdcont0" class="prdchkB">
                         <label for="prdcont0">
                           <div class="thumb">
-                            <img src="../../resource/img/prd/prd_list01.jpg" alt="">
+                            <img src="../../resource/img/main/thumb.png" alt="">
 
                           </div>
                           <div class="info">
@@ -225,7 +224,7 @@
                         <input type="checkbox" id="prdcont4" class="prdchkB">
                         <label for="prdcont4">
                           <div class="thumb">
-                             <img src="../../resource/img/prd/prd_list02.jpg" alt="">
+                             <img src="../../resource/img/main/thumb01.png" alt="">
 
                           </div>
                           <div class="info">
@@ -239,7 +238,7 @@
                         <input type="checkbox" id="prdcont5" class="prdchkB">
                         <label for="prdcont5">
                           <div class="thumb">
-                            <img src="../../resource/img/prd/prd_list01.jpg" alt="">
+                            <img src="../../resource/img/main/thumb.png" alt="">
 
                           </div>
                           <div class="info">
@@ -261,7 +260,7 @@
                         <input type="checkbox" id="prdcont7" class="prdchkB">
                         <label for="prdcont7">
                           <div class="thumb">
-                             <img src="../../resource/img/prd/prd_list02.jpg" alt="">
+                             <img src="../../resource/img/main/thumb02.png" alt="">
 
                           </div>
                           <div class="info">
@@ -275,7 +274,7 @@
                         <input type="checkbox" id="prdcont8" class="prdchkB">
                         <label for="prdcont8">
                           <div class="thumb">
-                             <img src="../../resource/img/prd/prd_list01.jpg" alt="">
+                             <img src="../../resource/img/main/thumb.png" alt="">
 
                           </div>
                           <div class="info">
@@ -289,7 +288,7 @@
                         <input type="checkbox" id="prdcont9" class="prdchkB">
                         <label for="prdcont9">
                           <div class="thumb">
-                             <img src="../../resource/img/prd/prd_list04.jpg" alt="">
+                             <img src="../../resource/img/main/thumb03.png" alt="">
 
                           </div>
                           <div class="info">
@@ -310,7 +309,7 @@
                         <input type="checkbox" id="prdcont10" class="prdchkB">
                         <label for="prdcont10">
                           <div class="thumb">
-                            <img src="../../resource/img/prd/prd_list01.jpg" alt="">
+                            <img src="../../resource/img/main/thumb04.png" alt="">
 
                           </div>
                           <div class="info">
@@ -324,7 +323,7 @@
                         <input type="checkbox" id="prdcont11" class="prdchkB">
                         <label for="prdcont11">
                           <div class="thumb">
-                             <img src="../../resource/img/prd/prd_list04.jpg" alt="">
+                             <img src="../../resource/img/main/thumb03.png" alt="">
 
                           </div>
                           <div class="info">
@@ -398,7 +397,7 @@
         </div>
 
       </div>
-      <div class="btn_wrap"><a class="compare_btn"  onclick="layerPopOpen('comparePop')" href="#">비교하기</a></div>
+      <div class="btn_wrap"><a class="compare_btn" href="#">비교하기</a></div>
     </div>
     <div class="footer">
       <div class="foot_top">

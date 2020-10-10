@@ -90,11 +90,14 @@ function compareBox(){
     compareBox = $('.compare_box'),
     compareBoxTit = $('.compare_box > .tit'),
     comparRemove = $('.compare_box .desc .blind');
-    
+
     inputEl.on('change', function(e){
+        console.log('dddd');
         if($(this).is(':checked') == true){ // 체크
+            console.log('checked')
             ChkNum += 1;
-            _img.push($(this).prev('.thumb').find('img').attr('src'));
+            _img.push($(this).parents('.prd').find('img').attr('src'));
+
             _tit.push($(this).next('label').find('.title').text());
             checked.push($(this));
             if(ChkNum > 0){
@@ -108,14 +111,14 @@ function compareBox(){
                 _img.splice(3,1);
                 _tit.splice(3,1);
                 checked.splice(3,1);
-                $(this).prop("checked", false);                
+                $(this).prop("checked", false);
             }
-            
+
             for(var i = 0; i < ChkNum; i++){
                 compImgSort.eq(i).attr('src',_img[i]);
                 compTitSort.eq(i).text(_tit[i]);
                 compList.eq(i).addClass('on');
-            }            
+            }
         }else if($(this).is(':checked') == false){ // 체크해제
             ChkNum -= 1;
             var comTit = $(this).next('label').find('.title').text(),
@@ -157,7 +160,7 @@ function compareBox(){
         compImgSort = $('.compare_box .list > div .img img');
         compTitSort = $('.compare_box .list > div .desc');
     });
-    
+
 
      $('.compare_box > .tit').click(function(){
         var thP = $(this).parent('.compare_box');
