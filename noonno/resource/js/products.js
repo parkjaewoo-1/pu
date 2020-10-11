@@ -49,3 +49,16 @@ function productsListInput (){
     $(this).find('label').attr('for','prdcont'+i);
   })
 }
+
+function detailTab(){
+
+  $('.edu_service .list_tab li').click(function(){
+      var tIdx = $(this).index();
+
+      $('.edu_service .list_tab li.on').removeClass('on');
+      $(this).addClass('on');
+       $('.edu_service .list_content .tab_cont.on').removeClass('on');
+      $('.edu_service .list_content .tab_cont').eq(tIdx).addClass('on');
+
+  });
+}
