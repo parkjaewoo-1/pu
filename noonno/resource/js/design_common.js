@@ -8,7 +8,6 @@ $(document).ready(function(){
     shareBtn();
     compareBox();
     aboutTab();
-    arco();
 })
 
 
@@ -88,16 +87,12 @@ function compareBox(){
     compImgSort = $('.compare_box .list > div .img img'),
     compTitSort = $('.compare_box .list > div .desc'),
     compareBox = $('.compare_box'),
-    compareBoxTit = $('.compare_box > .tit'),
-    comparRemove = $('.compare_box .desc .blind');
-
+    compareBoxTit = $('.compare_box > .tit');
+    
     inputEl.on('change', function(e){
-        console.log('dddd');
         if($(this).is(':checked') == true){ // 체크
-            console.log('checked')
             ChkNum += 1;
-            _img.push($(this).parents('.prd').find('img').attr('src'));
-
+            _img.push($(this).prev('.thumb').find('img').attr('src'));
             _tit.push($(this).next('label').find('.title').text());
             checked.push($(this));
             if(ChkNum > 0){
@@ -111,14 +106,14 @@ function compareBox(){
                 _img.splice(3,1);
                 _tit.splice(3,1);
                 checked.splice(3,1);
-                $(this).prop("checked", false);
+                $(this).prop("checked", false);                
             }
-
+            
             for(var i = 0; i < ChkNum; i++){
                 compImgSort.eq(i).attr('src',_img[i]);
                 compTitSort.eq(i).text(_tit[i]);
                 compList.eq(i).addClass('on');
-            }
+            }            
         }else if($(this).is(':checked') == false){ // 체크해제
             ChkNum -= 1;
             var comTit = $(this).next('label').find('.title').text(),
@@ -150,17 +145,24 @@ function compareBox(){
         ChkNum -= 1;
         var _delClTit = $(this).parent().siblings('.desc').text();
         var blindIdx = _tit.indexOf(_delClTit);
-        compList.eq(blindIdx).detach();
-        _tit.splice($.inArray(blindIdx, _tit),1);
-        _img.splice($.inArray(blindIdx, _img),1);
-        $('.compare_box .list').append(compListInnerHTML);
+        
         checked[blindIdx].prop('checked',false);
+        compList.eq(blindIdx).detach();
+        _tit.splice(blindIdx,1);
+        _img.splice(blindIdx,1);
         checked.splice(blindIdx,1);
+
+        $('.compare_box .list').append(compListInnerHTML);        
         compList = $('.compare_box .list > div');
         compImgSort = $('.compare_box .list > div .img img');
         compTitSort = $('.compare_box .list > div .desc');
+        if(ChkNum <= 0){
+            compareBoxTit.removeClass('on');
+            compareBox.removeClass('on');
+            TweenMax.to(compareBox, 0.6, {bottom: '-350px', ease:power4});
+        }
     });
-
+    
 
      $('.compare_box > .tit').click(function(){
         var thP = $(this).parent('.compare_box');
@@ -220,15 +222,4 @@ function layerPopClose(obj){// 레이어팝업 닫기, obj : 해당팝업 id
 
 
 
-}
-function arco(){
-    $('.arco_list ul li .tit').click(function(){
-        if( $(this).parent('li').hasClass('on') == true    ){
-            $(this).next('.hidden').slideUp();
-            $(this).parent('li').removeClass('on');
-        }else{
-            $(this).next('.hidden').slideDown();
-            $(this).parent('li').addClass('on');
-        }
-    });
 }
