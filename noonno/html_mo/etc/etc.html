@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link href="../../resource/css/reset.css" rel="stylesheet" type="text/css"/>
+  <link href="../../resource/css/common.css" rel="stylesheet" type="text/css"/>
+  <link href="../../resource/css/common_kim.css" rel="stylesheet" type="text/css"/>
+  <link href="../../resource/css/etc01.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="../../resource/js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="../../resource/js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../resource/js/plugin.js"></script>
+  <script type="text/javascript" src="../../resource/js/design_common.js"></script>
+  <script type="text/javascript" src="../../resource/js/board_event.js" ></script>
+
+
+
+</head>
+<body>
+  <div class="wrap sub">
+    <div class="gnb_wrap">
+      <div class="gnb_top">
+        <ul>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">통합검색</a></li>
+          <li><a href="#">가까운 눈높이 찾기</a></li>
+          <li><a class="point01" href="#">온라인 상담신청</a></li>
+        </ul>
+        <!-- 로그인상태 -->
+        <!--
+        <ul>
+          <li><a href="#">로그아웃</a></li>
+          <li><a href="#">통합검색</a></li>
+          <li><a href="#">가까운 눈높이 찾기</a></li>
+          <li><a class="point01" href="#">온라인 상담신청</a></li>
+        </ul>
+      -->
+        <!--// 로그인상태 -->
+      </div>
+      <div class="gnb_bottom">
+        <div class="gnb_bottom_in">
+          <div class="logo">
+            <a href="#">
+              <img src="../../resource/img/common/logo.png" alt="눈높이">
+            </a>
+          </div>
+          <div class="gnb">
+            <ul>
+              <li>
+                <a href="#">눈높이소개</a>
+                <ul class="depth_02 depth02_1">
+                  <li><a href="#none">브랜드스토리</a></li>
+                  <li><a href="#none">눈높이 학습서비스</a></li>
+
+                </ul>
+              </li>
+              <li>
+                <a href="#">제품소개</a>
+                <ul class="depth_02 depth02_1">
+                  <li><a href="#none">제품소개</a></li>
+                  <li><a href="#none">제품 한눈에 보기</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">커뮤니티</a>
+                <ul class="depth_02 depth02_1">
+                  <li><a href="#none">눈높이소식</a></li>
+                  <li><a href="#none">이벤트</a></li>
+                  <li><a href="#none">교육정보</a></li>
+                  <li><a href="#none">학습후기</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">회원서비스</a>
+                <ul class="depth_02 depth02_1">
+                  <li><a href="#none">눈높이365</a></li>
+                  <li><a href="#none">눈높이학습관</a></li>
+                  <li><a href="#none">눈높이성장판</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span class="olympiad">눈높이올림파이드</span></a>
+                <ul class="depth_02 depth02_1">
+                  <li><a href="#none">대회소개</a></li>
+                  <li><a href="#none">접수안내</a></li>
+                  <li><a href="#none">공지사항</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="right_menu">
+            <ul>
+              <li><a href="#"><img src="../../resource/img/common/sub_search_icon.png"></a></li>
+              <li><a href="#"><img src="../../resource/img/common/ic_allMenu.png"></a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="content">
+      <div class="location">
+        <div class="loca_home">
+          <a href="#" class="blind">홈</a>
+        </div>
+        <div class="loca_sel">눈높이 소개
+          <span class="loca_arrow blind">더보기</span>
+          <div class="hidden_div">
+            <ul class="hidden_loca">
+              <li><a href="#">서브뎁스01</a></li>
+              <li><a href="#">서브뎁스01</a></li>
+              <li><a href="#">서브뎁스01</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="loca_sel">눈높이 학습서비스
+          <span class="loca_arrow blind">더보기</span>
+          <div class="hidden_div">
+            <ul class="hidden_loca">
+              <li><a href="#">서브뎁스02</a></li>
+              <li><a href="#">서브뎁스02</a></li>
+              <li><a href="#">서브뎁스02</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ETC - 통합검색 true -->
+      <div class="inner">
+        <h2 class="sub-tit">통합검색</h2>
+        <div class="board-search">
+          <form action="" name="">
+            <input name="" value="" autocomplete="off" placeholder="검색어를 입력해주세요">
+            <button class="btn-search">검색</button>
+          </form>
+        </div>
+        <!-- 제품소개 -->
+        <div id="etc-search-product" class="board-wrap">
+          <p class="total-num etc-prdnum">제품소개<span>32</span>건</p>
+          <ul class="board-box board-gallery-col4">
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/etc01.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">눈높이 수학</h3>
+                  <p>연산력 완성으로 수학 자신감이 무럭무럭!</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/etc02.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">눈높이 수학</h3>
+                  <p>연산력 완성으로 수학 자신감이 무럭무럭!</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/etc03.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">눈높이 수학</h3>
+                  <p>연산력 완성으로 수학 자신감이 무럭무럭!</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/etc04.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">눈높이 수학</h3>
+                  <p>연산력 완성으로 수학 자신감이 무럭무럭!</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/etc05.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">눈높이 수학</h3>
+                  <p>연산력 완성으로 수학 자신감이 무럭무럭!</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/etc06.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">눈높이 수학</h3>
+                  <p>연산력 완성으로 수학 자신감이 무럭무럭!</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/etc07.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">눈높이 수학</h3>
+                  <p>연산력 완성으로 수학 자신감이 무럭무럭!</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/etc08.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">눈높이 수학</h3>
+                  <p>연산력 완성으로 수학 자신감이 무럭무럭!</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="more">
+            <a href="">
+              <span class="more-txt">검색결과 더보기</span>
+              <div class="more-num">
+                <span class="ac-num">1</span>/<span class="total-num">3</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- //제품소개 -->
+        <!-- 눈높이소식 -->
+        <div id="etc-search-notice" class="board-wrap">
+          <p class="total-num etc-prdnum">눈높이 소식<span>32</span>건</p>
+          <ul class="board-box board-gallery">
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/edu01.png" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">세상에서 가장 큰 학교가 찐쌤을 찾습니다!</h3>
+                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./education_view.html" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/edu02.png" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">2019 더불어배우다 연차보고서 e-book 발간소식 안내</h3>
+                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/edu03.png" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">트라움 감성 체험전 '우당탕탕 아빠가 만든 놀이터'</h3>
+                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/edu04.png" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">눈높이예스클래스, 써밋 수학 coming   soon!</h3>
+                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="more">
+            <a href="">
+              <span class="more-txt">검색결과 더보기</span>
+              <div class="more-num">
+                <span class="ac-num">1</span>/<span class="total-num">3</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- //눈높이소식 -->
+        <!-- 이벤트 -->
+        <div id="etc-search-event" class="board-wrap">
+          <p class="total-num">이벤트<span>14</span>건</p>
+          <ul class="board-box board-gallery event-board">
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/event01.png" alt="">
+                  <div class="mousehover">
+                    <div class="aiignbox">
+                      <h3 class="mouseho-tit">종료까지 <span class="dday">105</span>일 남음</h3>
+                      <p class="mouseho-txt"><span class="">당첨자발표</span><span class="date">2020.07.08</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">눈높이초등1학기 자신만만 배틀전 Coming Soon!</h3>
+                  <p><span class="br-cate">이벤트</span><span class="date">2020.07.28 09:00 ~ 2020.07.29 18:00</span></p>
+                </div>
+                <p class="wabal-dday">D-<span>16</span></p>
+              </a>
+            </li>
+            <li>
+              <a href="./event_view.html" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/event02.png" alt="">
+                  <div class="mousehover">
+                    <div class="aiignbox">
+                      <h3 class="mouseho-tit">종료까지 <span class="dday">105</span>일 남음</h3>
+                      <p class="mouseho-txt"><span class="">당첨자발표</span><span class="date">2020.07.08</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">제28회 눈높이아동문학대전 당첨자발표</h3>
+                  <p><span class="br-cate">이벤트</span><span class="date">2020.07.28 09:00 ~ 2020.07.29 18:00</span></p>
+                </div>
+                
+              </a>
+            </li>
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/event03.png" alt="">
+                  <div class="mousehover">
+                    <div class="aiignbox">
+                      <h3 class="mouseho-tit">종료까지 <span class="dday">105</span>일 남음</h3>
+                      <p class="mouseho-txt"><span class="">당첨자발표</span><span class="date">2020.07.08</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">눈높이청소년 문학상</h3>
+                  <p><span class="br-cate">이벤트</span><span class="date">2020.07.28 09:00 ~ 2020.07.29 18:00</span></p>
+                </div>
+                <p class="wabal-dday">D-<span>16</span></p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/event04.png" alt="">
+                  <div class="mousehover">
+                    <div class="aiignbox">
+                      <h3 class="mouseho-tit">종료까지 <span class="dday">105</span>일 남음</h3>
+                      <p class="mouseho-txt"><span class="">당첨자발표</span><span class="date">2020.07.08</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">온라인 학습 면역력 눈높이문해력으로 챙겨주세요!</h3>
+                  <p><span class="br-cate">이벤트</span><span class="date">2020.07.28 09:00 ~ 2020.07.29 18:00</span></p>
+                </div>
+                <p class="wabal-dday">D-<span>16</span></p>
+              </a>
+            </li>
+          </ul>
+          <div class="more">
+            <a href="">
+              <span class="more-txt">검색결과 더보기</span>
+              <div class="more-num">
+                <span class="ac-num">1</span>/<span class="total-num">3</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- //이벤트 -->
+        <div id="etc-search-edu" class="board-wrap">
+          <p class="total-num">교육정보<span>32</span>건</p>
+          <ul class="board-box board-gallery">
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/edu01.png" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">세상에서 가장 큰 학교가 찐쌤을 찾습니다!</h3>
+                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./education_view.html" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/edu02.png" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">2019 더불어배우다 연차보고서 e-book 발간소식 안내</h3>
+                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/edu03.png" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">트라움 감성 체험전 '우당탕탕 아빠가 만든 놀이터'</h3>
+                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="board">
+                <div class="thumb">
+                  <img src="../../resource/img/edu04.png" alt="">
+                </div>
+                <div class="info">
+                  <h3 class="board-tit">눈높이예스클래스, 써밋 수학 coming   soon!</h3>
+                  <p><span class="br-cate">뉴스</span><span class="date">2020.07.08</span></p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="more">
+            <a href="">
+              <span class="more-txt">검색결과 더보기</span>
+              <div class="more-num">
+                <span class="ac-num">1</span>/<span class="total-num">3</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="foot_top">
+        <div class="search_teach">
+          <ul>
+            <li>눈높이</li>
+            <li><a href="#" title="search_teach">선생님 소개</a></li>
+            <li><a href="#" title="search_teach">선생님 모집</a></li>
+            <li><a href="#" title="search_teach">선생님 찾기</a></li>
+
+          </ul>
+        </div>
+        <div class="foot_sns">
+          <ul>
+            <li><a href="#" class="blind youtube">유튜브</a></li>
+            <li><a href="#" class="blind blog">블로그</a></li>
+            <li><a href="#" class="blind insta">인스타</a></li>
+          </ul>
+        </div>
+        <div class="brand_site">
+            <div class="tit">브랜드 사이트</div>
+            <div class="brand_open">
+                <ul>
+                    <li><a href="#" target="_blank">대교닷컴</a></li>
+                    <li><a href="#" target="_blank">Kids jam</a></li>
+
+                    <li><a href="#" target="_blank">눈높이아티맘</a></li>
+                    <li><a href="#" target="_blank">드림랜드</a></li>
+
+                    <li><a href="#" target="_blank">차이홍중국어</a></li>
+                    <li><a href="#" target="_blank">상담센터</a></li>
+
+                    <li><a href="#" target="_blank">HSK 시험센터</a></li>
+                    <li><a href="#" target="_blank">티칭랩</a></li>
+
+                    <li><a href="#" target="_blank">솔루니</a></li>
+                    <li><a href="#" target="_blank">드림멘토</a></li>
+
+                    <li><a href="#" target="_blank">대교 스피킹</a></li>
+                    <li><a href="#" target="_blank">독서멘토</a></li>
+
+                    <li><a href="#" target="_blank">소빅스</a></li>
+                    <li><a href="#" target="_blank">차이홍공지학당</a></li>
+
+                    <li><a href="#" target="_blank">대교어린이TV</a></li>
+                    <li><a href="#" target="_blank">베이비TV</a></li>
+
+                    <li><a href="#" target="_blank">Eye Level</a></li>
+                </ul>
+                <div class="tit">
+                  브랜드사이트
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="foot_bottom">
+        <div class="f_logo">
+            <a href="#"><img src="../../resource/img/common/f_logo.png"></a>
+        </div>
+        <div class="f_link">
+            <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">이메일주소 무단수집거부</a></li>
+                <li><a href="#">법적고지</a></li>
+                <li><a href="#">지점/센터 찾기</a></li>
+            </ul>
+        </div>
+        <div class="f_info">대표이사 : 박수완 서울시 관악구 보라매로 3길 23 (보라매동 729-21) 대교타워 ㈜대교 TEL : 080-222-0909<br>
+        사업자등록번호 : 112-81-41114 통신판매신고번호 : 제 2013-서울관악 – 0478호 </div>
+        <div class="copyright">Copyright 2020 DAEKYO.,LTD. All Rights Reserved</div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
