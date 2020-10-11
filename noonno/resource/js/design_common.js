@@ -92,7 +92,7 @@ function compareBox(){
     inputEl.on('change', function(e){
         if($(this).is(':checked') == true){ // 체크
             ChkNum += 1;
-            _img.push($(this).prev('.thumb').find('img').attr('src'));
+            _img.push($(this).parents('.prd').find('img').attr('src'));
             _tit.push($(this).next('label').find('.title').text());
             checked.push($(this));
             if(ChkNum > 0){
