@@ -17,6 +17,7 @@
   <script type="text/javascript" src="../../resource/js/plugin.js"></script>
   <script type="text/javascript" src="../../resource/js/board_event.js" ></script>  
   <script type="text/javascript" src="../../resource/js/products.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 </head>
 <body>
   <div class="wrap sub">
@@ -234,9 +235,9 @@
           <div class="detail-wrap">
             <div class="list_tab">
                 <ul>
-                    <li class="on"><a href="#">제품소개</a></li>
-                    <li><a href="#">제품구성</a></li>
-                    <li><a href="#">교재 샘플보기</a></li>
+                    <li class="on"><a href="javascript:void(0)">제품소개</a></li>
+                    <li><a href="javascript:void(0)">제품구성</a></li>
+                    <li><a href="javascript:void(0)">교재 샘플보기</a></li>
                 </ul>
             </div>
             <div class="list_content">
@@ -292,22 +293,22 @@
                         <a href="https://www.youtube.com/watch?v=OW5Is0f1Ehs" target="_blank"><img src="../../resource/img/video_play_btn.png" alt=""></a>
                       </div>
                     </div>
-                    <div class="dt-section dt-section02 related-prd">
+                    <div class="dt-section dt-section03 related-prd">
                       <h3 class="dt-info-tit">함께하면 좋은 제품</h3>
                       <div class="related-lst">
                         <ul>
                           <li>
-                            <img src="../../resource/img/products_detail/Rectangle140-1.png" alt="">
+                            <img src="../../resource/img/products_detail/Rectangle140.png" alt="">
                             <p class="related-tit">눈높이한국사</p>
                             <p class="related-txt">인물 · 문화재 · 사건 · 시대로 만나는 쉽고 재미있는 우리역사 이야기</p>
                           </li>
                           <li>
-                            <img src="../../resource/img/products_detail/Rectangle140-2.png" alt="">
+                            <img src="../../resource/img/products_detail/Rectangle140-1.png" alt="">
                             <p class="related-tit">눈높이한국똑똑</p>
                             <p class="related-txt">유아의 언어발달 수준에 맞춘 체계적인 한글 완성 프로그램</p>
                           </li>
                           <li>
-                            <img src="../../resource/img/products_detail/Rectangle140-3.png" alt="">
+                            <img src="../../resource/img/products_detail/Rectangle140-2.png" alt="">
                             <p class="related-tit">눈높이영어똑똑</p>
                             <p class="related-txt">재미있는 애니메이션과 다양한 활동으로 영어와 친해지는 학습 프로그램</p>
                           </li>
@@ -327,18 +328,217 @@
                         </ul>
                       </div>
                     </div>
+                    <div class="dt-section dt-section04 banner">
+                      <div class="banner-w1180">
+                        <img src="../../resource/img/products_detail/Rectangle102.jpg" alt="">
+                        <div class="banner-event-info">
+                          <p class="bn-ev-subtit">여름방학 눈높이이벤트</p>
+                          <h3 class="bn-ev-tit">눈높이,<br>공부 초능력 스톤을 찾아서!</h3>
+                          <p class="bn-ev-term">2020.07.02 ~ 2020.07.18</p>
+                        </div>
+                      </div>
+                      <div class="banner-w590 bn-col2">
+                        <div class="bn-01">
+                          <a href="">
+                            <img src="../../resource/img/products_detail/Rectangle141-1.jpg" alt="">
+                            <span>관련제품 블로그</span>
+                          </a>
+                        </div>
+                        <div class="bn-02">
+                          <a href="">
+                            <img src="../../resource/img/products_detail/Rectangle141.jpg" alt="">
+                            <span>올바른 공부습관 눈높이손바닥정보</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <!-- 제품구성 -->
                 <div class="tab_cont">
-
+                  <div class="dt-configuration">
+                    <div class="dt-section composition">
+                      <h3 class="configuration-tit">교재구성</h3>
+                      <div id="composition-tit">
+                        <ul>
+                          <li class="w564"><span class="tit-br-right">과정</span></li>
+                          <li class="w438"><span class="tit-br-right">학습내용</span></li>
+                          <li class="w178"><span>비고</span></li>
+                        </ul>
+                      </div>
+                      <div class="composition-cont composition-cont01">
+                        <div class="colum01 li-h-row3 dotbg-right">
+                          <span class="comp-cont-tit">유아 과정</span>
+                        </div>
+                        <div class="colum02 dotbg-right">
+                          <ul class="process-tit">
+                            <li class="li-h-normal"><span>5A</span></li>
+                            <li class="li-h-normal"><span>4A</span></li>
+                            <li class="li-h-normal"><span>3A</span></li>
+                          </ul>
+                        </div>
+                        <div class="colum03 dotbg-right">
+                          <ul class="process-txt">
+                            <li class="li-h-normal"><span>운필력 완성</span></li>
+                            <li class="li-h-normal"><span>수와 양의 개념 익히기</span></li>
+                            <li class="li-h-normal"><span>기초암산력 훈련</span></li>
+                          </ul>
+                        </div>
+                        <div class="colum04 dotbg-right">
+                          <ul class="learning-cont">
+                            <li class="li-h-normal"><span>- 1~10까지 수 쓰기</span></li>
+                            <li class="li-h-normal"><span>- 50까지의 수 학습 / 수창연습</span></li>
+                            <li class="li-h-normal"><span>- 수의 계열 완성</span></li>
+                          </ul>
+                        </div>
+                        <div class="colum05">
+                          <span class="comp-cont-rem">눈높이수학</span>
+                        </div>
+                      </div>
+                      <div class="composition-cont composition-cont02">
+                        <div class="colum01 li-h-row7 dotbg-right">
+                          <span class="comp-cont-tit">초등 과정</span>
+                        </div>
+                        <div class="colum02 dotbg-right">
+                          <ul class="process-tit">
+                            <li class="li-h-normal"><span>2A</span></li>
+                            <li class="li-h-normal"><span>A</span></li>
+                            <li class="li-h-normal"><span>B</span></li>
+                            <li class="li-h-normal br-b-no"><span>C</span></li>
+                            <li class="li-h-normal"><span>D</span></li>
+                            <li class="li-h-normal"><span>E</span></li>
+                            <li class="li-h-normal"><span>F</span></li>
+                          </ul>
+                        </div>
+                        <div class="colum03 dotbg-right">
+                          <ul class="process-txt">
+                            <li class="li-h-normal"><span>기초암산력 훈련</span></li>
+                            <li class="li-h-row4"><span>자연수 범위의 계산력 완성</span></li>
+                            <li class="li-h-row2"><span>분수의 계산력 완성</span></li>
+                          </ul>
+                        </div>
+                        <div class="colum04 dotbg-right">
+                          <ul class="learning-cont">
+                            <li class="li-h-normal"><span>- 덧셈·뺄셈의 암산력 배양</span></li>
+                            <li class="li-h-normal"><span>- 덧셈·뺄셈의 암산력 완성</span></li>
+                            <li class="li-h-normal"><span>- 덧셈·뺄셈의 필산력 완성</span></li>
+                            <li class="li-h-row2"><span>- 곱셈·나눗셈의 완성</span></li>
+                            <li class="li-h-normal"><span>- 분수의 사칙 계산</span></li>
+                            <li class="li-h-normal"><span>- 분수의 사칙 혼합 / 문장제</span></li>
+                          </ul>
+                        </div>
+                        <div class="colum05">
+                          <span class="comp-cont-rem">눈높이수학</span>
+                        </div>
+                      </div>
+                      <div class="composition-cont composition-cont03">
+                        <div class="colum01 li-h-row3 dotbg-right">
+                          <span class="comp-cont-tit">중등 과정</span>
+                        </div>
+                        <div class="colum02 dotbg-right">
+                          <ul class="process-tit">
+                            <li class="li-h-normal br-b-no"><span>G</span></li>
+                            <li class="li-h-normal br-b-no"><span>H</span></li>
+                            <li class="li-h-normal br-b-no"><span>I</span></li>
+                          </ul>
+                        </div>
+                        <div class="colum03 dotbg-right">
+                          <ul class="process-txt">
+                            <li class="li-h-row3"><span>중학교 수학의 완성</span></li>
+                          </ul>
+                        </div>
+                        <div class="colum04 dotbg-right">
+                          <ul class="learning-cont">
+                            <li class="li-h-row1h5"><span>- 연립일차방정식의 완성</span></li>
+                            <li class="li-h-row1h5"><span>- 인수분해 / 이차방정식 완성</span></li>
+                          </ul>
+                        </div>
+                        <div class="colum05">
+                          <span class="comp-cont-rem">눈높이수학</span>
+                        </div>
+                      </div>
+                      <div class="composition-cont composition-cont04">
+                        <div class="colum01 li-h-row7 dotbg-right">
+                          <span class="comp-cont-tit">고등 과정</span>
+                        </div>
+                        <div class="colum02 dotbg-right">
+                          <ul class="process-tit">
+                            <li class="li-h-normal br-b-no"><span>J</span></li>
+                            <li class="li-h-normal br-b-no"><span>K</span></li>
+                            <li class="li-h-normal br-b-no"><span>L</span></li>
+                            <li class="li-h-normal br-b-no"><span>M</span></li>
+                            <li class="li-h-normal br-b-no"><span>N</span></li>
+                            <li class="li-h-normal br-b-no"><span>O</span></li>
+                            <li class="li-h-normal br-b-no"><span>P</span></li>
+                          </ul>
+                        </div>
+                        <div class="colum03 dotbg-right">
+                          <ul class="process-txt">
+                            <li class="li-h-row7"><span>고등학교 수학의 완성</span></li>
+                          </ul>
+                        </div>
+                        <div class="colum04 dotbg-right">
+                          <ul class="learning-cont">
+                            <li class="li-h-normal"><span>- 항등식/근의 성질</span></li>
+                            <li class="li-h-normal"><span>- 고차방정식/합성함수와 역함수</span></li>
+                            <li class="li-h-normal"><span>- 지수함수/로그함수/삼각함수</span></li>
+                            <li class="li-h-normal"><span>- 행렬/수열/도함수와 미분법</span></li>
+                            <li class="li-h-normal"><span>- 적분/순열과 조합/확률의 계산/분포</span></li>
+                            <li class="li-h-normal"><span>- 복소수의 극형식/쌍곡선/공간좌표</span></li>
+                            <li class="li-h-normal"><span>- 백터/도함수의 활용/정적분의 활용</span></li>
+                          </ul>
+                        </div>
+                        <div class="colum05">
+                          <span class="comp-cont-rem">눈높이수학</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dt-section service">
+                      <h3 class="configuration-tit">서비스물</h3>
+                      <div class="servicebox">
+                        <ul>
+                          <li>- 수학 숫자시트 (1~100까지)</li>
+                          <li>- 수학 숫자나라 (1~100까지/11~100까지)</li>
+                          <li>- 수학 전개도시트</li>
+                          <li>- 수학 구구단시트</li>
+                          <li>- 19단표</li>
+                          <li>- 학업성취도문제</li>
+                          <li>- 중등실전문제</li>
+                          <li>- 수학 공식시트</li>
+                          <li></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <!-- 교재 샘플보기 -->
                 <div class="tab_cont">
 
                 </div>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="prd-office-searchbar">
+      <div class="office-align">
+        <div class="onlinebtn">
+          <div>
+            <p>눈높이선생님의 따뜻한 온라인 학습시스템</p>
+            <a href="">
+              <img src="../../resource/img/products_detail/office_bi.png" alt="">
+              <span>온라인 신청</span>
+              <img src="../../resource/img/products_detail/office_btn01.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="office-search">
+          <img src="../../resource/img/products_detail/office_btn02.png" alt="">
+          <span>가까운 지점과 센터를 조회해 보세요</span>
+            <form action="" name=""class="officesearch">
+              <input name="" value="" autocomplete="off" placeholder="동/면/읍 입력해주세요">
+              <button class="btn-search">검색</button>
+            </form>
         </div>
       </div>
     </div>
