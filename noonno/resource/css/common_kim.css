@@ -965,7 +965,7 @@ input[type='checkbox']:checked.compare_check + label:before {
     position: fixed;
     z-index: 100;
     right: 80px;
-    bottom: -350px;
+    bottom: -406px;
     width: 560px;
     padding-bottom: 40px;
     border-radius: 10px 10px 0 0;
@@ -976,7 +976,7 @@ input[type='checkbox']:checked.compare_check + label:before {
     display: flex;
     padding: 20px 40px;
     cursor: pointer;
-    border-radius: 10px 10px 0 0;
+    border-radius: 7px 7px 0 0;
     background: #3b302f;
 
     align-items: center;

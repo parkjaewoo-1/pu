@@ -1,4 +1,8 @@
 $(function(){
+  $(document).ready(function(){
+    $('.detail-wrap .tab_cont').hide();
+    $('.detail-wrap .tab_cont').eq(0).show();
+  });
   var toolTipBtn = $('.prd-tooltip'),
   toolTip = $('.tooltip-info');
   toolTip.each(function(i){
@@ -96,8 +100,8 @@ function detailTab(){
 
     $('.detail-wrap .list_tab li').removeClass('on');
     $('.detail-wrap .list_tab li').eq(tabIdx).addClass('on');
-    $('.detail-wrap .list_content .tab_cont').removeClass('on');
-    $('.detail-wrap .list_content .tab_cont').eq(tabIdx).addClass('on');
+    $('.detail-wrap .list_content .tab_cont').hide();
+    $('.detail-wrap .list_content .tab_cont').eq(tabIdx).show();
     TweenMax.to($(window), 0.3, {scrollTo:{y:tabPos-200}});
     if(tabIdx == 2){
       dtSampleSlide = new Swiper ('.dt-sample-slide',sampleSettings);

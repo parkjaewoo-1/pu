@@ -450,7 +450,7 @@
 }
 .detail-wrap .list_tab ul.fixed {
   position: fixed;
-  z-index: 20;
+  z-index: 101;
   top: 0;
   width: 1180px;
   margin: 0 auto -1px;
@@ -482,11 +482,8 @@
 .detail-wrap .list_content{
   margin-top:110px;
 }
-.detail-wrap .tab_cont{
-  display:none;
-}
 .detail-wrap .tab_cont.on{
-  display:block;
+ display: block;
 }
 /* detail content */
 .list_tab,

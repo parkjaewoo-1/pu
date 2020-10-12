@@ -137,7 +137,7 @@ function compareBox(){
             if(ChkNum <= 0){
                 compareBoxTit.removeClass('on');
                 compareBox.removeClass('on');
-                TweenMax.to(compareBox, 0.6, {bottom: '-350px', ease:power4});
+                TweenMax.to(compareBox, 0.6, {bottom: '-406px', ease:power4});
             }
         }
     });
@@ -159,7 +159,7 @@ function compareBox(){
         if(ChkNum <= 0){
             compareBoxTit.removeClass('on');
             compareBox.removeClass('on');
-            TweenMax.to(compareBox, 0.6, {bottom: '-350px', ease:power4});
+            TweenMax.to(compareBox, 0.6, {bottom: '-406px', ease:power4});
         }
     });
     
