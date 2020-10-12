@@ -6,6 +6,12 @@
   box-sizing: border-box;
   border-radius: 10px;
 }
+.mp-table-tit-box.fixed{
+  position: fixed;
+  top:130px;
+  z-index: 2;
+  background: #fff;
+}
 .mp-table-tit-left {
   width: 172px;
   text-align: center;
