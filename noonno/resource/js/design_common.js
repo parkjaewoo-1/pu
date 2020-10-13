@@ -9,7 +9,23 @@ $(document).ready(function(){
     compareBox();
     aboutTab();
 })
-
+function fixedEl(heaH, _posEl, _fixedEl){
+    var headerH = Math.ceil($(heaH).height()),
+    posEl = $(_posEl).offset().top,
+    fixedEl = $(_fixedEl),
+    fixedElH = Math.ceil($(_fixedEl).height()),
+    actionTabPos = posEl+fixedElH;
+  
+    $(window).scroll(function(){
+      var scrollT = $(window).scrollTop();
+      if(actionTabPos < scrollT){
+        fixedEl.addClass('fixed').css('top',headerH);
+      }else{
+        fixedEl.removeClass('fixed').css('top','0');
+      }
+  
+    });
+  }
 
 function gnb(){
 

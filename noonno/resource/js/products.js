@@ -55,7 +55,6 @@ function productsListInput (){
     $(this).find('label').attr('for','prdcont'+i);
   })
 }
-
 function detailTab(){
   var headerH = $('.gnb_wrap').height(),
   tabPos = $('.list_tab').offset().top,

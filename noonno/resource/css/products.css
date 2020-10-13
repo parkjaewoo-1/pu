@@ -450,7 +450,7 @@
 }
 .detail-wrap .list_tab ul.fixed {
   position: fixed;
-  z-index: 101;
+  z-index: 2;
   top: 0;
   width: 1180px;
   margin: 0 auto -1px;

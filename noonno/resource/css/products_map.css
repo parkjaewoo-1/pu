@@ -11,6 +11,7 @@
   top:130px;
   z-index: 2;
   background: #fff;
+  transition: all 0.5s;
 }
 .mp-table-tit-left {
   width: 172px;
@@ -69,6 +70,7 @@ ul#age-select-sort li button {
 #map-content-wrap > .map-cont .map-cont-tit-box {
     width: 172px;
     height: 100%;
+    cursor: pointer;
 }
 #map-content-wrap > .map-cont .map-cont-cont {
   position: relative;
@@ -165,31 +167,6 @@ ul#age-select-sort li button {
   width:1008px;
 }
 
-.graph .gr-line .gr-pos-type1{
-  left:0;
-}
-.graph .gr-line .gr-pos-type2{
-  left:144px;
-}
-.graph .gr-line .gr-pos-type3{
-  left:288px;
-}
-.graph .gr-line .gr-pos-type4{
-  left:432px;
-}
-.graph .gr-line .gr-pos-type5{
-  left:576px;
-}
-.graph .gr-line .gr-pos-type6{
-  left:720px;
-}
-.graph .gr-line .gr-pos-type7{
-  left:864px;
-}
-.gr-pos-type2-over-half{
-  left:
-}
-
 .graph .gr-line .gr-w-col1-over-1_1{
   width:165px;
 }
@@ -197,6 +174,9 @@ ul#age-select-sort li button {
   width:249px;
 }
 
+.map-cont-cont .graph .gr-line button.type-notsel{
+  background:#c7c7c7;
+}
 .graph .gr-line button.color-yellow{
   background:#FFF5DC;
 }
@@ -208,4 +188,29 @@ ul#age-select-sort li button {
 }
 .graph .gr-line button.color-blue{
   background:#D3EFFB;
+}
+
+/* popup */
+.map-view-wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+.map-view-wrap .map-view-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000;
+  opacity: 0.4;
+  display: block;
+  z-index: 101;
+  top: 0;
+}
+.map-view-wrap .map-view-align{
+  z-index:102;
 }
