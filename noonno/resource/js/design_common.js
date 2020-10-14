@@ -8,7 +8,30 @@ $(document).ready(function(){
     shareBtn();
     compareBox();
     aboutTab();
+    prdTooltip();
 })
+function prdTooltip(){
+    var toolTipBtn = $('.prd-tooltip'),
+    toolTip = $('.tooltip-info');
+    toolTip.each(function(i){
+      var toolTipW = toolTip.eq(1).width() / 2;
+      toolTip.eq(i).css('left','-' + toolTipW + 'px');
+      // console.log(toolTipW)
+    });
+    toolTipBtn.click(function(e){
+      e.stopPropagation();
+      if($(this).next(toolTip).hasClass('on')){
+        $(this).next(toolTip).removeClass('on');
+      }else{
+        toolTip.removeClass('on'); 
+        $(this).next(toolTip).addClass('on');
+      }
+    });
+    $('html,body').on('click',function(){
+      toolTip.removeClass('on'); 
+    })
+  }
+  
 function fixedEl(heaH, _posEl, _fixedEl){
     var headerH = Math.ceil($(heaH).height()),
     posEl = $(_posEl).offset().top,

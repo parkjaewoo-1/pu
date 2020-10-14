@@ -1,6 +1,9 @@
 $(function(){
   fixedEl('.gnb_wrap','.map-table-tit','.mp-table-tit-box');
+  viewEvent();
+
   // ageTypeClick();
+
 });
 $(document).ready(function(){
   mapPosition();
@@ -59,5 +62,25 @@ function mapContTitClick(){
       $('.gr-line > div').find('button').removeClass('type-notsel');
       $(this).removeClass('active');
     }
+  });
+}
+
+function viewEvent(){
+  var viewBtn = $('.gr-line button'),
+  viewWrap = $('.map-view-wrap'),
+  close = $('.map-view-wrap .close');
+
+  viewBtn.on('click',function(){
+    viewWrap.addClass('on');
+    $('html,body').css({
+      'overflow':'hidden',
+    });
+    
+  });
+  close.on('click',function(){
+    viewWrap.removeClass('on');
+    $('html,body').css({
+      'overflow':'auto',
+    })
   });
 }

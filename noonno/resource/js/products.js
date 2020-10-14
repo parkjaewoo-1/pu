@@ -3,25 +3,7 @@ $(function(){
     $('.detail-wrap .tab_cont').hide();
     $('.detail-wrap .tab_cont').eq(0).show();
   });
-  var toolTipBtn = $('.prd-tooltip'),
-  toolTip = $('.tooltip-info');
-  toolTip.each(function(i){
-    var toolTipW = toolTip.eq(1).width() / 2;
-    toolTip.eq(i).css('left','-' + toolTipW + 'px');
-    // console.log(toolTipW)
-  });
-  toolTipBtn.click(function(e){
-    e.stopPropagation();
-    if($(this).next(toolTip).hasClass('on')){
-      $(this).next(toolTip).removeClass('on');
-    }else{
-      toolTip.removeClass('on'); 
-      $(this).next(toolTip).addClass('on');
-    }
-  });
-  $('html,body').on('click',function(){
-    toolTip.removeClass('on'); 
-  })
+  
   productsListInput();
 
   if($('.prd-thumb-slider li').length > 1){
