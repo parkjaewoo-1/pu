@@ -9,7 +9,6 @@ $(document).ready(function(){
     compareBox();
     aboutTab();
     prdTooltip();
-    commonTop();
 })
 function prdTooltip(){
     var toolTipBtn = $('.prd-tooltip'),
