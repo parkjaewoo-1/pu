@@ -8,11 +8,8 @@ $(document).ready(function(){
     shareBtn();
     compareBox();
     aboutTab();
-<<<<<<< HEAD
     prdTooltip();
-=======
     arco();
->>>>>>> 78d3e89bbe72bb648ae948ff95c9a8220168bca8
 })
 function prdTooltip(){
     var toolTipBtn = $('.prd-tooltip'),
@@ -266,7 +263,7 @@ function layerPopClose(obj){// 레이어팝업 닫기, obj : 해당팝업 id
 
 
 }
-}
+
 function arco(){
     $('.arco_list ul li .tit').click(function(){
         if( $(this).parent('li').hasClass('on') == true    ){

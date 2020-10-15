@@ -1,8 +1,7 @@
 $(function(){
   fixedEl('.gnb_wrap','.map-table-tit','.mp-table-tit-box');
   viewEvent();
-
-  // ageTypeClick();
+  ageTypeClick();
 
 });
 $(document).ready(function(){
@@ -31,13 +30,39 @@ function mapPosition(){
   });
 }
 
+
+function mapContTitClick(){
+  var clBtn = $('.map-cont-tit-box');
+  var acbox = $('.map-cont-cont');
+  clBtn.click(function(){
+    var btIdx = $('.map-cont-tit-box').index(this);
+    
+    $('.gr-line > div').find('button').addClass('type-notsel');
+    
+    if(!$(this).hasClass('active')){
+      acbox.eq(btIdx).find('button').removeClass('type-notsel');
+      clBtn.removeClass('active');
+      $(this).addClass('active');
+    }else{
+      $('.gr-line > div').find('button').removeClass('type-notsel');
+      $(this).removeClass('active');
+    }
+
+    
+  });
+}
+
+
 function ageTypeClick(){
   var typeBtn = $('#age-select-sort > li');
+
   typeBtn.each(function(i){
     $(this).attr('data-cl-type','type'+i);
   });
+  
   typeBtn.click(function(){
     var _type = $(this).attr('data-cl-type');
+
     $('.gr-line > div').find('button').removeClass('type-notsel');
 
     $('.gr-line > div').each(function(i){
@@ -46,24 +71,19 @@ function ageTypeClick(){
         $(this).find('button').addClass('type-notsel');
       }
     });
+
+    if(!$(this).hasClass('active')){
+      typeBtn.removeClass('active');
+      $(this).addClass('active');
+    }else{
+      $(this).removeClass('active');
+      $('.gr-line > div').find('button').removeClass('type-notsel');
+    }
+
   });
 }
 
-function mapContTitClick(){
-  var clBtn = $('.map-cont-tit-box');
-  var acbox = $('.map-cont-cont');
-  clBtn.click(function(){
-    var btIdx = $('.map-cont-tit-box').index(this);
-    $('.gr-line > div').find('button').addClass('type-notsel');
-    if(!$(this).hasClass('active')){
-      acbox.eq(btIdx).find('button').removeClass('type-notsel');
-      $(this).addClass('active');
-    }else{
-      $('.gr-line > div').find('button').removeClass('type-notsel');
-      $(this).removeClass('active');
-    }
-  });
-}
+
 
 function viewEvent(){
   var viewBtn = $('.gr-line button'),

@@ -42,21 +42,26 @@
 ul#age-select-sort {
   display: flex;
   align-items: center;
-  padding: 13px 0;
+  padding: 7px 0;
 }
 ul#age-select-sort li {
   width: 144px;
   text-align: center;
+  padding:0 15px;
 }
 ul#age-select-sort li button {
   font-weight: 500;
   font-size: 15px;
-  line-height: 22px;
+  line-height: 35px;
   font-family: 'Noto Sans KR', sans-serif;
   color: #666;
   display: inline-block;
-  text-align: center;
   font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 10px 10px 0px 10px;
+  box-sizing: border-box;
 }
 
 /* graph content */
@@ -71,6 +76,12 @@ ul#age-select-sort li button {
     width: 172px;
     height: 100%;
     cursor: pointer;
+    padding: 0 20px;
+}
+#map-content-wrap > .map-cont .map-cont-tit-box > div {
+  padding: 30px 0;
+  box-sizing: border-box;
+  border-radius: 20px 20px 0px 20px;
 }
 #map-content-wrap > .map-cont .map-cont-cont {
   position: relative;
@@ -110,7 +121,8 @@ ul#age-select-sort li button {
     display: block;
     margin: 0 auto;
 }
-#map-content-wrap > .map-cont .map-cont-tit-box span {
+
+#map-content-wrap > .map-cont .map-cont-tit-box .tit {
     text-align: center;
     display: block;
     font-weight: bold;
@@ -119,6 +131,92 @@ ul#age-select-sort li button {
     line-height: 26px;
     font-family: 'Noto Sans KR', sans-serif;
     color:#666;
+    margin: 5px auto 0;
+}
+#map-content-wrap > .map-cont .map-cont-tit-box .icon{
+  background-position: center;
+  display: block;
+  margin: 0 auto;
+}
+#map-content-wrap > .map-cont.map-cont01 .icon{
+  background-image: url(../../resource/img/mapicon01.png);
+  background-size: 30px;
+  width: 30px;
+  height:28px;
+}
+#map-content-wrap > .map-cont.map-cont02 .icon{
+  background-image: url(../../resource/img/mapicon02.png);
+  background-size: 30px;
+  width: 30px;
+  height:30px;
+}
+#map-content-wrap > .map-cont.map-cont03 .icon{
+  background-image: url(../../resource/img/mapicon03.png);
+  background-size: 27px;
+  width: 27px;
+  height:25px;
+}
+#map-content-wrap > .map-cont.map-cont04 .icon{
+  background-image: url(../../resource/img/mapicon04.png);
+  background-size: 25px;
+  width: 25px;
+  height:32px;
+}
+#map-content-wrap > .map-cont.map-cont05 .icon{
+  background-image: url(../../resource/img/mapicon05.png);
+  background-size: 25px;
+  width: 25px;
+  height:29px;
+}
+#map-content-wrap > .map-cont.map-cont06 .icon{
+  background-image: url(../../resource/img/mapicon06.png);
+  background-size: 20px;
+  width: 20px;
+  height:30px;
+}
+#map-content-wrap > .map-cont.map-cont07 .icon{
+  background-image: url(../../resource/img/mapicon07.png);
+  background-size: 25px;
+  width: 25px;
+  height:23px;
+}
+/* hover */
+ul#age-select-sort li.active button{
+  background: #ED1C24;
+  color:#fff;
+  transition: all .3s ease-in;
+}
+#map-content-wrap > .map-cont .map-cont-tit-box.active > div {
+
+  background: #f00;
+
+  transition: all .2s ease-in;
+
+}
+#map-content-wrap > .map-cont .map-cont-tit-box.active > div .tit{
+  color:#fff;
+  transition: all .2s ease-in;
+  }
+#map-content-wrap > .map-cont.map-cont01 .map-cont-tit-box.active .icon{
+  background-image: url(../../resource/img/mapicon01_h.png);
+}
+#map-content-wrap > .map-cont.map-cont02 .map-cont-tit-box.active .icon{
+  background-image: url(../../resource/img/mapicon02_h.png);
+}
+#map-content-wrap > .map-cont.map-cont03 .map-cont-tit-box.active .icon{
+  background-image: url(../../resource/img/mapicon03_h.png);
+}
+#map-content-wrap > .map-cont.map-cont04 .map-cont-tit-box.active .icon{
+  background-image: url(../../resource/img/mapicon04_h.png);
+}
+#map-content-wrap > .map-cont.map-cont05 .map-cont-tit-box.active .icon{
+  background-image: url(../../resource/img/mapicon05_h.png);
+}
+#map-content-wrap > .map-cont.map-cont06 .map-cont-tit-box.active .icon{
+  background-image: url(../../resource/img/mapicon06_h.png);
+}
+#map-content-wrap > .map-cont.map-cont07 .map-cont-tit-box.active .icon{
+  background-image: url(../../resource/img/mapicon07_h.png);
 }
 
 /* content button common */
