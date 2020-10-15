@@ -144,6 +144,9 @@ html.fp-enabled,
 .fp-slidesNav ul li {
     display: inline-block;
 }
+#fp-nav ul li:last-child{
+    display:none;
+}
 #fp-nav ul li a,
 .fp-slidesNav ul li a {
     display: block;
